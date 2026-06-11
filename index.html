@@ -1,829 +1,583 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
-  <title>Psicóloga Aura Herrera | Terapia Psicológica en Medellín y Virtual</title>
-  <meta name="description" content="Psicóloga Aura Herrera – Terapia Cognitivo Conductual en Medellín y sesiones virtuales. Especialista en ansiedad, depresión, duelo, autoestima y crecimiento personal." />
-  <meta name="keywords" content="psicóloga en Medellín, terapia psicológica, ansiedad, depresión, terapia virtual, terapia cognitivo conductual, psicóloga Obelisco, terapia online Colombia, psicóloga duelo, autoestima" />
-  <meta name="author" content="Psicóloga Aura Herrera" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Psicóloga Aura Herrera | Medellín y Virtual" />
-  <meta property="og:description" content="Acompañamiento psicológico profesional con enfoque en Terapia Cognitivo Conductual. Presencial en Medellín y virtual para todo el mundo." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_CO" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicóloga Aura Herrera - Atención Clínica y Educativa</title>
+    <!-- Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons para los iconos oficiales -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght=0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght=300;400;500;600&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        
+        /* Estilos para controlar el despliegue del menú */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-[#f8fafc] text-[#334155] antialiased text-base">
 
-  <!-- ========== NAVBAR ========== -->
-  <header class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#inicio" class="nav-brand">
-        <span class="brand-name">Aura Herrera</span>
-        <span class="brand-title">Psicóloga</span>
-      </a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#especialidades">Especialidades</a>
-        <a href="#testimonios">Testimonios</a>
-        <a href="#faq">Preguntas</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#agendar" class="nav-cta">Agendar Cita</a>
-      </nav>
-      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- ========== HERO ========== -->
-  <section class="hero" id="inicio">
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-    </div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Bienvenida / Bienvenido</p>
-      <h1 class="hero-title">Un espacio seguro<br /><em>para sanar y crecer</em></h1>
-      <p class="hero-subtitle">Acompañamiento psicológico profesional con calidez, respeto y evidencia científica. Presencial en Medellín · Virtual para todo el mundo.</p>
-      <div class="hero-actions">
-        <a href="#agendar" class="btn btn-primary">Agendar sesión</a>
-        <a href="#sobre-mi" class="btn btn-outline">Conocer más</a>
-      </div>
-      <div class="hero-badges">
-        <div class="badge"><i class="fa-solid fa-graduation-cap"></i> Uniminuto</div>
-        <div class="badge"><i class="fa-solid fa-brain"></i> TCC &amp; 3ª Generación</div>
-        <div class="badge"><i class="fa-solid fa-star"></i> 3 años de experiencia</div>
-      </div>
-    </div>
-    <div class="hero-image-wrap">
-      <div class="hero-avatar-placeholder">
-        <i class="fa-solid fa-user-doctor"></i>
-        <p>Foto profesional<br/>de Aura Herrera</p>
-      </div>
-    </div>
-    <div class="wave-divider">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F9F6F1"/>
-      </svg>
-    </div>
-  </section>
-
-  <!-- ========== SOBRE MÍ ========== -->
-  <section class="section" id="sobre-mi">
-    <div class="container two-col">
-      <div class="about-image-col">
-        <div class="about-img-wrap">
-          <div class="about-avatar-placeholder">
-            <i class="fa-solid fa-heart-pulse"></i>
-            <p>Foto de perfil</p>
-          </div>
-          <div class="about-accent-card">
-            <span class="accent-num">3</span>
-            <span class="accent-label">años de experiencia profesional</span>
-          </div>
-        </div>
-      </div>
-      <div class="about-text-col">
-        <p class="section-eyebrow">Sobre mí</p>
-        <h2 class="section-title">Hola, soy <em>Aura Herrera</em></h2>
-        <p>Soy psicóloga egresada de la Corporación Universitaria Minuto de Dios, con 3 años de experiencia acompañando procesos de cambio, sanación y crecimiento personal.</p>
-        <p>Mi enfoque integra la <strong>Terapia Cognitivo Conductual (TCC)</strong> con las <strong>Terapias de Tercera Generación</strong> — incluyendo Mindfulness, ACT y terapia basada en compasión — para ofrecer un proceso terapéutico adaptado a cada persona.</p>
-        <p>Creo profundamente que pedir ayuda es un acto de valentía. Mi compromiso es ofrecerte un espacio de escucha genuina, sin juicios, donde puedas explorar tu mundo interior y construir las herramientas que necesitas para vivir mejor.</p>
-        <div class="about-chips">
-          <span class="chip">Terapia Cognitivo Conductual</span>
-          <span class="chip">ACT</span>
-          <span class="chip">Mindfulness</span>
-          <span class="chip">Terapia de Aceptación</span>
-          <span class="chip">Terapia Basada en Compasión</span>
-        </div>
-        <div class="about-formation">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <div>
-            <strong>Corporación Universitaria Minuto de Dios</strong>
-            <span>Psicología · Medellín, Colombia</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="organic-divider"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 Q150,60 300,30 Q450,0 600,30 Q750,60 900,30 Q1050,0 1200,30" stroke="#C8D8C9" stroke-width="2" fill="none"/></svg></div>
-
-  <!-- ========== SERVICIOS ========== -->
-  <section class="section section-alt" id="servicios">
-    <div class="container">
-      <p class="section-eyebrow centered">Servicios</p>
-      <h2 class="section-title centered">¿Cómo puedo <em>acompañarte?</em></h2>
-      <p class="section-intro">Ofrezco atención psicológica presencial en Medellín y virtual para cualquier ciudad o país, adaptada a tu tiempo y necesidades.</p>
-
-      <div class="services-grid">
-
-        <div class="service-card">
-          <div class="service-icon"><i class="fa-solid fa-building"></i></div>
-          <h3>Sesión Presencial</h3>
-          <p class="service-location"><i class="fa-solid fa-location-dot"></i> Medellín · Zona Obelisco</p>
-          <p>Un espacio físico cálido y confidencial para tu proceso terapéutico.</p>
-          <ul class="service-details">
-            <li><i class="fa-regular fa-clock"></i> 60 minutos por sesión</li>
-            <li><i class="fa-solid fa-calendar-days"></i> Lun–Jue: 8am–6pm</li>
-            <li><i class="fa-solid fa-calendar-days"></i> Vie: 8am–4pm · Sáb: 8am–12pm</li>
-          </ul>
-          <div class="service-pricing">
-            <div class="price-item">
-              <span class="price-label">Sesión individual</span>
-              <span class="price-value">$120.000 COP</span>
+    <!-- BANNER SUPERIOR (MENÚ CON DESPLEGABLE) -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 px-6 py-4 transition-all shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <!-- LOGO CORPORATIVO (Reemplaza 'logo.png' por tu archivo real) -->
+                <div class="w-12 h-12 bg-[#b0d4de]/30 rounded-xl flex items-center justify-center border border-[#b0d4de] overflow-hidden shadow-sm">
+                    <img src="logo.png" alt="Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover">
+                    <div class="hidden flex-col items-center justify-center text-slate-700 font-bold text-xs">
+                        <span>Psi</span>
+                    </div>
+                </div>
+                <span class="font-semibold text-slate-800 text-lg tracking-wide">Aura Herrera</span>
             </div>
-            <div class="price-item highlight">
-              <span class="price-label">Paquete 4 sesiones</span>
-              <span class="price-value">$400.000 COP</span>
+            
+            <!-- Enlaces superiores derechos -->
+            <nav class="hidden lg:flex gap-8 text-sm font-semibold text-slate-600 items-center">
+                <a href="#sobre-mi" class="hover:text-[#5ba4b7] transition-colors">Sobre Mí</a>
+                <a href="#investigaciones" class="hover:text-[#5ba4b7] transition-colors">Investigaciones</a>
+                
+                <!-- MENÚ DESPLEGABLE: SERVICIOS -->
+                <div class="relative dropdown py-2">
+                    <button class="hover:text-[#5ba4b7] transition-colors flex items-center gap-1 focus:outline-none">
+                        Servicios 
+                        <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400"></i>
+                    </button>
+                    <!-- Opciones del menú desplegable -->
+                    <div class="absolute left-0 mt-2 w-56 bg-white border border-slate-100 rounded-xl shadow-xl hidden dropdown-menu overflow-hidden z-50 animate-in fade-in duration-200">
+                        <a href="#especialidades" class="block px-5 py-3 text-slate-600 hover:bg-slate-50 hover:text-[#5ba4b7] transition-colors border-b border-slate-50">Especialidades</a>
+                        <a href="#servicios" class="block px-5 py-3 text-slate-600 hover:bg-slate-50 hover:text-[#5ba4b7] transition-colors border-b border-slate-50">Tarifas de Servicios</a>
+                        <a href="#politicas" class="block px-5 py-3 text-slate-600 hover:bg-slate-50 hover:text-[#5ba4b7] transition-colors border-b border-slate-50">Políticas y Pagos</a>
+                        <a href="#gestion-documental" class="block px-5 py-3 text-slate-600 hover:bg-slate-50 hover:text-[#5ba4b7] transition-colors">Gestión Documental</a>
+                    </div>
+                </div>
+
+                <a href="#agenda" class="hover:text-[#5ba4b7] transition-colors">Agenda tu Cita</a>
+                <a href="#testimonios" class="hover:text-[#5ba4b7] transition-colors">Testimonios</a>
+                <a href="#preguntas" class="hover:text-[#5ba4b7] transition-colors">Preguntas</a>
+                <a href="#contacto" class="hover:text-[#5ba4b7] transition-colors">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. SECCIÓN: SOBRE MÍ -->
+    <section id="sobre-mi" class="py-20 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+            <h1 class="font-serif text-4xl lg:text-5xl text-[#1e293b] leading-tight font-medium">
+                Atención Psicología Clínica y Educativa con Enfoque Humano
+            </h1>
+            <p class="text-lg text-slate-600 leading-relaxed max-w-xl">
+                Hola, soy la Psicóloga Aura Herrera. Ofrezco un espacio seguro de psicoterapia en Medellín y en modalidad virtual, diseñado para ayudarte a comprender tus procesos emocionales y potenciar tu bienestar integral.
+            </p>
+            <div class="pt-2">
+                <a href="#agenda" class="inline-flex items-center gap-2 bg-[#1e293b] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-slate-800 transition-colors shadow-sm">
+                    <i data-lucide="calendar" class="w-5 h-5"></i> Agenda tu Cita Aquí
+                </a>
             </div>
-          </div>
-          <a href="#agendar" class="btn btn-primary btn-full">Agendar presencial</a>
         </div>
-
-        <div class="service-card featured">
-          <div class="featured-badge">Más elegido</div>
-          <div class="service-icon"><i class="fa-solid fa-video"></i></div>
-          <h3>Sesión Virtual</h3>
-          <p class="service-location"><i class="fa-solid fa-globe"></i> Para todo el mundo · Google Meet</p>
-          <p>Conecta desde la comodidad de tu hogar o desde cualquier parte del mundo.</p>
-          <ul class="service-details">
-            <li><i class="fa-regular fa-clock"></i> 60 minutos por sesión</li>
-            <li><i class="fa-solid fa-calendar-days"></i> Lun–Dom: 9am–7pm</li>
-            <li><i class="fa-brands fa-google"></i> Vía Google Meet</li>
-          </ul>
-          <div class="service-pricing">
-            <div class="price-item">
-              <span class="price-label">Sesión individual</span>
-              <span class="price-value">$90.000 COP</span>
+        <div class="lg:col-span-5 flex justify-center">
+            <!-- FOTO DE PERFIL PROFESIONAL (Reemplaza 'perfil.jpg' por tu fotografía real) -->
+            <div class="relative w-72 h-72 lg:w-80 lg:h-80 rounded-full bg-[#1e293b] overflow-hidden border-[12px] border-[#b0d4de]/40 shadow-md flex items-center justify-center">
+                <img src="perfil.jpg" alt="Psicóloga Aura Herrera" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover">
+                <div class="hidden absolute inset-0 flex-col items-center justify-center text-white p-6 text-center">
+                    <p class="font-serif text-2xl mb-1">Aura Herrera</p>
+                    <p class="text-xs uppercase tracking-wider text-[#b0d4de]">Psicóloga Clínica</p>
+                </div>
             </div>
-            <div class="price-item highlight">
-              <span class="price-label">Paquete 4 sesiones</span>
-              <span class="price-value">$300.000 COP</span>
+        </div>
+    </section>
+
+    <!-- 2. SECCIÓN: INVESTIGACIONES -->
+    <section id="investigaciones" class="py-20 bg-white border-y border-slate-100 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-sm font-semibold tracking-widest text-[#5ba4b7] uppercase">Academia</span>
+                <h2 class="font-serif text-3xl lg:text-4xl text-slate-800 mt-1">Trayectoria e <span class="italic text-[#5ba4b7]">Investigación</span></h2>
+                <p class="text-slate-500 mt-2 text-base max-w-xl mx-auto">Artículos científicos y publicaciones académicas indexadas orientadas al análisis social y educativo.</p>
             </div>
-          </div>
-          <a href="#agendar" class="btn btn-primary btn-full">Agendar virtual</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon"><i class="fa-solid fa-people-group"></i></div>
-          <h3>Terapia de Pareja</h3>
-          <p class="service-location"><i class="fa-solid fa-heart"></i> Presencial y Virtual</p>
-          <p>Trabajo en comunicación, resolución de conflictos y reconexión emocional.</p>
-          <ul class="service-details">
-            <li><i class="fa-regular fa-clock"></i> 60–75 minutos</li>
-            <li><i class="fa-solid fa-handshake"></i> Sesión inicial de evaluación</li>
-            <li><i class="fa-solid fa-route"></i> Plan terapéutico personalizado</li>
-          </ul>
-          <div class="service-pricing">
-            <div class="price-item">
-              <span class="price-label">Consultar tarifas</span>
-              <span class="price-value">Escríbeme</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="border-l-4 border-[#b0d4de] bg-slate-50 p-6 flex flex-col justify-between rounded-r-2xl hover:shadow-sm transition-shadow min-h-[180px]">
+                    <div>
+                        <h4 class="font-semibold text-slate-800 text-base mb-1 leading-snug">Subjetividad y Sociedad: Análisis de Procesos Psicosociales contemporáneos</h4>
+                        <span class="text-xs text-slate-400 block uppercase tracking-wider mb-4">Revista Subjetividad y Sociedad</span>
+                    </div>
+                    <a href="#" class="text-sm text-slate-600 font-medium flex items-center gap-1 hover:text-slate-900">Leer publicación <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                </div>
+                <div class="border-l-4 border-[#b0d4de] bg-slate-50 p-6 flex flex-col justify-between rounded-r-2xl hover:shadow-sm transition-shadow min-h-[180px]">
+                    <div>
+                        <h4 class="font-semibold text-slate-800 text-base mb-1 leading-snug">Investigación en Psicología Clínica e Intervención Social I</h4>
+                        <span class="text-xs text-slate-400 block uppercase tracking-wider mb-4">Revista Iberoamericana de Psicología</span>
+                    </div>
+                    <a href="#" class="text-sm text-slate-600 font-medium flex items-center gap-1 hover:text-slate-900">Ver artículo <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                </div>
+                <div class="border-l-4 border-[#b0d4de] bg-slate-50 p-6 flex flex-col justify-between rounded-r-2xl hover:shadow-sm transition-shadow min-h-[180px]">
+                    <div>
+                        <h4 class="font-semibold text-slate-800 text-base mb-1 leading-snug">Estudios Avanzados sobre Ajuste Educativo y Emocional II</h4>
+                        <span class="text-xs text-slate-400 block uppercase tracking-wider mb-4">Revista Iberoamericana de Psicología</span>
+                    </div>
+                    <a href="#" class="text-sm text-slate-600 font-medium flex items-center gap-1 hover:text-slate-900">Ver artículo <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                </div>
+                <div class="border-l-4 border-[#b0d4de] bg-slate-50 p-6 flex flex-col justify-between rounded-r-2xl hover:shadow-sm transition-shadow min-h-[180px]">
+                    <div>
+                        <h4 class="font-semibold text-slate-800 text-base mb-1 leading-snug">Repositorio Institucional Científico de Salud y Crianza</h4>
+                        <span class="text-xs text-slate-400 block uppercase tracking-wider mb-4">Repositorio Uniminuto</span>
+                    </div>
+                    <a href="#" class="text-sm text-slate-600 font-medium flex items-center gap-1 hover:text-slate-900">Explorar tesis <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                </div>
             </div>
-          </div>
-          <a href="#contacto" class="btn btn-outline btn-full">Solicitar información</a>
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN: ESPECIALIDADES Y POBLACIÓN INTERVENIDA -->
+    <section id="especialidades" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-sm font-semibold tracking-widest text-[#5ba4b7] uppercase">Enfoques de Atención</span>
+            <h2 class="font-serif text-3xl lg:text-4xl text-slate-800 mt-1">Especialidades Clínicas y Población</h2>
+            <p class="text-slate-500 mt-2 text-base max-w-xl mx-auto">Acompañamiento profesional y adaptado según el ciclo vital.</p>
         </div>
 
-      </div>
+        <!-- Pestañas de Población Intervenida -->
+        <div class="bg-slate-100 p-2 rounded-2xl max-w-3xl mx-auto mb-12 flex flex-wrap justify-between gap-1 text-center text-sm font-semibold text-slate-600">
+            <span class="flex-1 py-3.5 px-4 bg-white rounded-xl shadow-sm text-slate-800 border border-slate-100">🧸 Infancia</span>
+            <span class="flex-1 py-3.5 px-4 rounded-xl">🎒 Adolescencia</span>
+            <span class="flex-1 py-3.5 px-4 rounded-xl">🌱 Juventud</span>
+            <span class="flex-1 py-3.5 px-4 rounded-xl">💼 Adultez</span>
+        </div>
 
-      <!-- Google Meet Info -->
-      <div class="info-banner">
-        <div class="info-banner-icon"><i class="fa-brands fa-google"></i></div>
-        <div>
-          <strong>Sesiones virtuales por Google Meet</strong>
-          <p>Recibirás el enlace de la sesión en tu correo antes de la cita. Solo necesitas conexión a internet, cámara y micrófono. Sin instalaciones adicionales.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="organic-divider"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 Q150,0 300,30 Q450,60 600,30 Q750,0 900,30 Q1050,60 1200,30" stroke="#C8D8C9" stroke-width="2" fill="none"/></svg></div>
-
-  <!-- ========== ESPECIALIDADES ========== -->
-  <section class="section" id="especialidades">
-    <div class="container">
-      <p class="section-eyebrow centered">Especialidades</p>
-      <h2 class="section-title centered">Áreas en las que <em>trabajo contigo</em></h2>
-      <p class="section-intro">Cada proceso es único. Trabajo con personas de todas las edades y en diversas situaciones de vida.</p>
-
-      <div class="population-row">
-        <div class="pop-chip"><i class="fa-solid fa-child"></i> Infancia</div>
-        <div class="pop-chip"><i class="fa-solid fa-person-half-dress"></i> Adolescencia</div>
-        <div class="pop-chip"><i class="fa-solid fa-person-running"></i> Juventud</div>
-        <div class="pop-chip"><i class="fa-solid fa-user"></i> Adultez</div>
-      </div>
-
-      <div class="specialties-grid">
-        <div class="specialty-card">
-          <div class="sp-icon"><i class="fa-solid fa-wind"></i></div>
-          <h4>Ansiedad</h4>
-          <p>Técnicas para gestionar pensamientos intrusivos, ataques de pánico y preocupación excesiva.</p>
-        </div>
-        <div class="specialty-card">
-          <div class="sp-icon"><i class="fa-solid fa-cloud-rain"></i></div>
-          <h4>Depresión</h4>
-          <p>Acompañamiento en procesos de tristeza profunda, desmotivación y pérdida de sentido.</p>
-        </div>
-        <div class="specialty-card">
-          <div class="sp-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
-          <h4>Estrés</h4>
-          <p>Herramientas para manejar la sobrecarga, el agotamiento y el equilibrio vida-trabajo.</p>
-        </div>
-        <div class="specialty-card">
-          <div class="sp-icon"><i class="fa-solid fa-heart-crack"></i></div>
-          <h4>Duelo</h4>
-          <p>Apoyo en procesos de pérdida — personas, relaciones, proyectos o identidad.</p>
-        </div>
-        <div class="specialty-card">
-          <div class="sp-icon"><i class="fa-solid fa-star"></i></div>
-          <h4>Autoestima</h4>
-          <p>Trabajo profundo en autoimagen, autocuidado y construcción de valía personal.</p>
-        </div>
-        <div class="specialty-card">
-          <div class="sp-icon"><i class="fa-solid fa-link-slash"></i></div>
-          <h4>Dependencia Emocional</h4>
-          <p>Reconocer patrones dependientes y construir vínculos más sanos y equilibrados.</p>
-        </div>
-        <div class="specialty-card">
-          <div class="sp-icon"><i class="fa-solid fa-wave-square"></i></div>
-          <h4>Regulación Emocional</h4>
-          <p>Aprender a identificar, expresar y manejar emociones de forma adaptativa.</p>
-        </div>
-        <div class="specialty-card">
-          <div class="sp-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h4>Trauma</h4>
-          <p>Abordaje cuidadoso de experiencias difíciles que siguen afectando el presente.</p>
-        </div>
-        <div class="specialty-card">
-          <div class="sp-icon"><i class="fa-solid fa-seedling"></i></div>
-          <h4>Crecimiento Personal</h4>
-          <p>Exploración de propósito, valores y metas para una vida más plena y auténtica.</p>
-        </div>
-        <div class="specialty-card">
-          <div class="sp-icon"><i class="fa-solid fa-heart"></i></div>
-          <h4>Terapia de Pareja</h4>
-          <p>Comunicación asertiva, manejo de conflictos y reconexión afectiva en la relación.</p>
-        </div>
-        <div class="specialty-card">
-          <div class="sp-icon"><i class="fa-solid fa-house-chimney-user"></i></div>
-          <h4>Terapia Familiar</h4>
-          <p>Dinámicas familiares, límites saludables y comunicación entre sus miembros.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="organic-divider"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 Q150,60 300,30 Q450,0 600,30 Q750,60 900,30 Q1050,0 1200,30" stroke="#C8D8C9" stroke-width="2" fill="none"/></svg></div>
-
-  <!-- ========== AGENDAR ========== -->
-  <section class="section section-alt" id="agendar">
-    <div class="container">
-      <p class="section-eyebrow centered">Agenda tu cita</p>
-      <h2 class="section-title centered">El primer paso es <em>el más importante</em></h2>
-      <p class="section-intro">Reserva tu sesión de manera fácil y rápida. Selecciona el día y hora que mejor se adapte a tu vida.</p>
-
-      <div class="booking-wrapper">
-        <div class="booking-steps">
-          <div class="step">
-            <div class="step-num">1</div>
-            <div class="step-text">
-              <strong>Elige tu modalidad</strong>
-              <span>Presencial en Medellín o virtual desde donde estés</span>
+        <!-- Cuadrícula de Enfoques Clínicos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-all">
+                <h4 class="font-semibold text-slate-800 text-lg mb-2 flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#5ba4b7]"></span> Ansiedad</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Técnicas para gestionar pensamientos intrusivos, ataques de pánico y preocupación excesiva.</p>
             </div>
-          </div>
-          <div class="step">
-            <div class="step-num">2</div>
-            <div class="step-text">
-              <strong>Selecciona día y hora</strong>
-              <span>A través de nuestro sistema de agendamiento en línea</span>
+            <div class="p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-all">
+                <h4 class="font-semibold text-slate-800 text-lg mb-2 flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#5ba4b7]"></span> Depresión</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Acompañamiento en procesos de tristeza profunda, desmotivación y pérdida de sentido de vida.</p>
             </div>
-          </div>
-          <div class="step">
-            <div class="step-num">3</div>
-            <div class="step-text">
-              <strong>Realiza el anticipo</strong>
-              <span>50% del valor de la sesión para confirmar tu cita</span>
+            <div class="p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-all">
+                <h4 class="font-semibold text-slate-800 text-lg mb-2 flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#5ba4b7]"></span> Estrés</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Herramientas para manejar la sobrecarga académica, el agotamiento laboral y el equilibrio emocional.</p>
             </div>
-          </div>
-          <div class="step">
-            <div class="step-num">4</div>
-            <div class="step-text">
-              <strong>¡Listo! Nos vemos en tu sesión</strong>
-              <span>Recibirás confirmación y recordatorio por correo</span>
+            <div class="p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-all">
+                <h4 class="font-semibold text-slate-800 text-lg mb-2 flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#5ba4b7]"></span> Duelo</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Apoyo sensible ante pérdidas significativas de seres queridos, relaciones o transiciones de vida.</p>
             </div>
-          </div>
-        </div>
-
-        <div class="calendly-embed-area">
-          <!-- INTEGRACIÓN CALENDLY: Reemplaza el href con tu enlace de Calendly -->
-          <div class="calendly-placeholder">
-            <i class="fa-regular fa-calendar-check"></i>
-            <h3>Agenda tu sesión</h3>
-            <p>Haz clic en el botón para ver la disponibilidad en tiempo real y reservar tu cita.</p>
-            <!-- Reemplaza "tu-usuario" con tu usuario de Calendly -->
-            <a href="https://calendly.com/tu-usuario" target="_blank" class="btn btn-primary btn-lg">
-              <i class="fa-regular fa-calendar-plus"></i> Ver disponibilidad y agendar
-            </a>
-            <p class="small-note">Serás redirigida/o a Calendly, plataforma segura de agendamiento.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== PAGOS / NEQUI ========== -->
-  <section class="section" id="pagos">
-    <div class="container">
-      <p class="section-eyebrow centered">Pagos</p>
-      <h2 class="section-title centered">Reserva tu cita con <em>anticipo seguro</em></h2>
-      <p class="section-intro">Para confirmar tu cita se requiere un anticipo del <strong>50%</strong> del valor de la sesión, transferido por Nequi.</p>
-
-      <div class="payment-grid">
-        <div class="payment-info">
-          <div class="payment-step">
-            <div class="ps-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-            <div>
-              <h4>Pago por Nequi</h4>
-              <p>Realiza el anticipo directamente desde la app de Nequi a los siguientes datos:</p>
+            <div class="p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-all">
+                <h4 class="font-semibold text-slate-800 text-lg mb-2 flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#5ba4b7]"></span> Autoestima</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Trabajo en autoimagen, autocompasión y la construcción sólida de la valía personal.</p>
             </div>
-          </div>
-
-          <div class="nequi-card">
-            <div class="nequi-logo">
-              <i class="fa-solid fa-n"></i> Nequi
+            <div class="p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-all">
+                <h4 class="font-semibold text-slate-800 text-lg mb-2 flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#5ba4b7]"></span> Dependencia Emocional</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Orientación para reconocer patrones vinculares dependientes y construir relaciones sanas.</p>
             </div>
-            <div class="nequi-fields">
-              <div class="nequi-field">
-                <span class="nf-label">Nombre</span>
-                <span class="nf-value">Aura Herrera</span>
-              </div>
-              <div class="nequi-field">
-                <span class="nf-label">Número Nequi</span>
-                <span class="nf-value nequi-number">
-                  <!-- REEMPLAZA CON TU NÚMERO DE NEQUI -->
-                  <em>[ Agregar número aquí ]</em>
-                </span>
-              </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN: SERVICIOS -->
+    <section id="servicios" class="py-20 bg-[#f1f5f9] px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-sm font-semibold tracking-widest text-[#5ba4b7] uppercase">Portafolio</span>
+                <h2 class="font-serif text-3xl lg:text-4xl text-slate-800 mt-1">¿Cómo puedo <span class="italic text-[#5ba4b7]">acompañarte?</span></h2>
+                <p class="text-slate-500 mt-2 text-base max-w-xl mx-auto">Ofrezco atención psicológica adaptada a tu tiempo, espacio y necesidades actuales.</p>
             </div>
-          </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Adultos Presencial -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm flex flex-col justify-between min-h-[480px]">
+                    <div>
+                        <div class="bg-slate-50 w-11 h-11 rounded-xl flex items-center justify-center text-slate-700 mb-5"><i data-lucide="building"></i></div>
+                        <h3 class="font-serif text-2xl text-slate-800 mb-3">Adultos Presencial</h3>
+                        <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                            <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> Medellín · Zona Estadio</li>
+                            <li class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4"></i> 60 minutos por sesión</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 leading-relaxed">Un espacio físico idóneo y confidencial enfocado en tu salud mental y procesos clínicos individuales.</p>
+                    </div>
+                    <div class="mt-6">
+                        <div class="bg-slate-50 rounded-xl p-3 mb-4 text-sm">
+                            <div class="flex justify-between mb-1"><span>Individual</span><span class="font-semibold text-slate-800">$100.000</span></div>
+                            <div class="flex justify-between text-emerald-600 font-medium"><span>Paquete 4 ses.</span><span>$380.000</span></div>
+                        </div>
+                        <a href="#agenda" class="block text-center border border-slate-800 text-slate-800 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 hover:text-white transition-colors">Agendar presencial</a>
+                    </div>
+                </div>
 
-          <div class="payment-instructions">
-            <h4><i class="fa-solid fa-list-check"></i> Instrucciones</h4>
-            <ol>
-              <li>Abre tu app de <strong>Nequi</strong>.</li>
-              <li>Ve a <strong>"Enviar dinero"</strong>.</li>
-              <li>Ingresa el número registrado.</li>
-              <li>Transfiere el <strong>50% del valor</strong> de tu sesión.</li>
-              <li>Guarda el comprobante de pago.</li>
-              <li>Envía el comprobante por <strong>WhatsApp</strong> para confirmar tu cita.</li>
-            </ol>
-          </div>
-        </div>
+                <!-- Adultos Virtual -->
+                <div class="bg-white border-2 border-[#b0d4de] rounded-3xl p-6 shadow-sm flex flex-col justify-between min-h-[480px] relative">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#b0d4de] text-slate-800 text-xs font-bold px-4 py-0.5 rounded-full uppercase tracking-wider">Más Elegido</span>
+                    <div>
+                        <div class="bg-slate-900 w-11 h-11 rounded-xl flex items-center justify-center text-white mb-5"><i data-lucide="video"></i></div>
+                        <h3 class="font-serif text-2xl text-slate-800 mb-3">Adultos Virtual</h3>
+                        <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                            <li class="flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4"></i> Cobertura global · Online</li>
+                            <li class="flex items-center gap-2"><i data-lucide="video" class="w-4 h-4"></i> Vía Google Meet</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 leading-relaxed">Conecta desde cualquier lugar del mundo con total comodidad, flexibilidad horaria y confidencialidad.</p>
+                    </div>
+                    <div class="mt-6">
+                        <div class="bg-slate-50 rounded-xl p-3 mb-4 text-sm">
+                            <div class="flex justify-between mb-1"><span>Individual</span><span class="font-semibold text-slate-800">$80.000</span></div>
+                            <div class="flex justify-between text-emerald-600 font-medium"><span>Paquete 4 ses.</span><span>$300.000</span></div>
+                        </div>
+                        <a href="#agenda" class="block text-center bg-slate-900 text-white py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition-colors">Agendar virtual</a>
+                    </div>
+                </div>
 
-        <div class="payment-qr">
-          <h4>Escanea el código QR</h4>
-          <!-- REEMPLAZA con tu QR de Nequi real -->
-          <div class="qr-placeholder">
-            <div class="qr-box">
-              <i class="fa-solid fa-qrcode"></i>
-              <p>Código QR de Nequi</p>
-              <small>Reemplaza con imagen real</small>
+                <!-- Infancia y Adolescencia -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm flex flex-col justify-between min-h-[480px]">
+                    <div>
+                        <div class="bg-slate-50 w-11 h-11 rounded-xl flex items-center justify-center text-slate-700 mb-5"><i data-lucide="smile"></i></div>
+                        <h3 class="font-serif text-2xl text-slate-800 mb-3">Infancia y Adolescencia</h3>
+                        <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4"></i> Enfoque Co-educativo</li>
+                            <li class="flex items-center gap-2"><i data-lucide="home" class="w-4 h-4"></i> Presencial o Virtual</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 leading-relaxed">Acompañamiento clínico en ajuste socioemocional, conducta infantil y pautas de crianza familiar.</p>
+                    </div>
+                    <div class="mt-6">
+                        <div class="bg-slate-50 rounded-xl p-3 mb-4 text-sm">
+                            <div class="flex justify-between mb-1"><span>Presencial</span><span class="font-semibold text-slate-800">$120.000</span></div>
+                            <div class="flex justify-between text-emerald-600 font-medium"><span>Paquete (Virtual)</span><span>$450.000</span></div>
+                        </div>
+                        <a href="#agenda" class="block text-center border border-slate-800 text-slate-800 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 hover:text-white transition-colors">Agendar consulta</a>
+                    </div>
+                </div>
+
+                <!-- Apoyo Emocional -->
+                <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm flex flex-col justify-between min-h-[480px]">
+                    <div>
+                        <div class="bg-slate-50 w-11 h-11 rounded-xl flex items-center justify-center text-slate-700 mb-5"><i data-lucide="heart-handshake"></i></div>
+                        <h3 class="font-serif text-2xl text-slate-800 mb-3">Apoyo Emocional</h3>
+                        <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                            <li class="flex items-center gap-2"><i data-lucide="award" class="w-4 h-4"></i> Soporte Oficial</li>
+                            <li class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4"></i> Vigencia de <strong>1 año</strong></li>
+                        </ul>
+                        <p class="text-sm text-slate-600 leading-relaxed">Evaluación para mascotas de asistencia. Se prefiere entorno virtual para evaluar la conducta natural del animal.</p>
+                    </div>
+                    <div class="mt-6">
+                        <div class="bg-slate-50 rounded-xl p-3 mb-4 text-sm">
+                            <div class="flex justify-between mb-1"><span>Trámite Virtual</span><span class="font-semibold text-slate-800">$200.000</span></div>
+                            <div class="flex justify-between"><span>Trámite Presencial</span><span class="font-semibold text-slate-800">$250.000</span></div>
+                        </div>
+                        <a href="#agenda" class="block text-center border border-slate-800 text-slate-800 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 hover:text-white transition-colors">Solicitar trámite</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="payment-amounts">
-            <p class="pa-title">Referencia de anticipos:</p>
-            <div class="pa-row"><span>Sesión presencial</span><span><strong>$60.000 COP</strong></span></div>
-            <div class="pa-row"><span>Sesión virtual</span><span><strong>$45.000 COP</strong></span></div>
-            <div class="pa-row"><span>Paquete presencial</span><span><strong>$200.000 COP</strong></span></div>
-            <div class="pa-row"><span>Paquete virtual</span><span><strong>$150.000 COP</strong></span></div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="organic-divider"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 Q150,0 300,30 Q450,60 600,30 Q750,0 900,30 Q1050,60 1200,30" stroke="#C8D8C9" stroke-width="2" fill="none"/></svg></div>
-
-  <!-- ========== TESTIMONIOS ========== -->
-  <section class="section section-alt" id="testimonios">
-    <div class="container">
-      <p class="section-eyebrow centered">Testimonios</p>
-      <h2 class="section-title centered">Lo que dicen <em>mis consultantes</em></h2>
-      <p class="section-intro">Estas experiencias son compartidas con permiso y algunos detalles han sido modificados para proteger la privacidad.</p>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          <p class="t-text">"Llegué a consulta sintiéndome completamente perdida. Aura me ayudó a entender mis patrones de ansiedad y hoy tengo herramientas reales para manejarlos. El proceso fue transformador."</p>
-          <div class="t-author">
-            <div class="t-avatar">M</div>
-            <div>
-              <strong>M. Alejandra</strong>
-              <span>Medellín · Ansiedad y autoestima</span>
+    <!-- 5. SECCIÓN: POLÍTICAS, CONFIRMACIÓN Y CANCELACIÓN (CON QR REUBICADO) -->
+    <section id="politicas" class="py-20 bg-white px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-sm font-semibold tracking-widest text-[#5ba4b7] uppercase">Lineamientos</span>
+                <h2 class="font-serif text-3xl lg:text-4xl text-slate-800 mt-1">Políticas de Reserva y Cancelación</h2>
             </div>
-          </div>
-        </div>
 
-        <div class="testimonial-card">
-          <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          <p class="t-text">"Vivo en el exterior y la terapia virtual con Aura fue igual de cercana y efectiva que si fuera presencial. Su calidez y profesionalismo hacen toda la diferencia."</p>
-          <div class="t-author">
-            <div class="t-avatar">C</div>
-            <div>
-              <strong>Carlos D.</strong>
-              <span>Canadá · Duelo y crecimiento personal</span>
+            <!-- Panel de Anticipo Integrado con Código QR Bre-B -->
+            <div class="bg-rose-50 border border-dashed border-rose-200 rounded-3xl p-6 lg:p-8 mb-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                <div class="md:col-span-8 space-y-3">
+                    <h3 class="text-rose-700 font-bold text-lg flex items-center gap-2 mb-1">
+                        <i data-lucide="wallet" class="w-5 h-5"></i> Pago de la cita con anticipo para confirmar (50%)
+                    </h3>
+                    <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                        Para asegurar y bloquear tu espacio en la agenda de manera formal, se requiere obligatoriamente el **50% del valor total de la sesión** por adelantado. El saldo restante se cancela al finalizar la consulta.
+                    </p>
+                    <div class="pt-2">
+                        <span class="inline-block bg-white px-4 py-2 rounded-xl border border-rose-100 font-semibold text-sm sm:text-base text-slate-700 shadow-sm">
+                            💰 Celular Nequi: <strong class="font-mono text-rose-700">3216042811</strong>
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Código QR Oficial Bre-B / Nequi colocado aquí -->
+                <div class="md:col-span-4 flex justify-center">
+                    <div class="bg-white p-4 rounded-2xl border border-rose-100 w-full max-w-[200px] text-center shadow-sm">
+                        <div class="flex items-center justify-center gap-1 mb-2">
+                            <span class="text-[10px] font-bold text-[#00d4b2]">Bre-B</span>
+                            <span class="text-slate-300">|</span>
+                            <span class="text-[10px] font-bold text-[#47127a]">Nequi</span>
+                        </div>
+                        <!-- Reemplaza 'qr-nequi.png' por tu imagen real de código QR -->
+                        <div class="w-full aspect-square bg-slate-50 rounded-xl flex flex-col items-center justify-center text-xs text-slate-400 border border-dashed border-slate-200 p-2 overflow-hidden">
+                            <img src="qr-nequi.png" alt="Código QR Nequi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-contain">
+                            <div class="hidden flex-col items-center justify-center text-center">
+                                <i data-lucide="qr-code" class="w-8 h-8 mb-1 text-slate-300"></i>
+                                <span class="text-[10px]">Escanear QR</span>
+                            </div>
+                        </div>
+                        <p class="text-xs font-bold text-slate-800 mt-2">Aura Herrera</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <div class="testimonial-card">
-          <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-          <p class="t-text">"Después de meses de depresión, encontrar a Aura fue un punto de inflexión. Me escuchó sin juzgarme y trabajamos juntas de manera muy práctica. Ya soy otra persona."</p>
-          <div class="t-author">
-            <div class="t-avatar">S</div>
-            <div>
-              <strong>Sara V.</strong>
-              <span>Bogotá · Depresión y regulación emocional</span>
+            <!-- TABLA DE VALORES CON EL 50% DETALLADO -->
+            <div class="mb-8 border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
+                <table class="w-full text-left border-collapse text-sm sm:text-base">
+                    <thead>
+                        <tr class="bg-slate-50 border-b border-slate-100 text-slate-700 font-bold">
+                            <th class="p-4">Servicio Clínico</th>
+                            <th class="p-4">Tarifa Plena</th>
+                            <th class="p-4 text-rose-700 text-right">Anticipo de Confirmación (50%)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-600">
+                        <tr>
+                            <td class="p-4 font-medium text-slate-800">Adultos Presencial</td>
+                            <td class="p-4">$100.000 COP</td>
+                            <td class="p-4 text-right font-bold text-slate-900">$50.000 COP</td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                            <td class="p-4 font-medium text-slate-800">Adultos Virtual</td>
+                            <td class="p-4">$80.000 COP</td>
+                            <td class="p-4 text-right font-bold text-slate-900">$40.000 COP</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium text-slate-800">Infancia y Adolescencia (Presencial)</td>
+                            <td class="p-4">$120.000 COP</td>
+                            <td class="p-4 text-right font-bold text-slate-900">$60.000 COP</td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                            <td class="p-4 font-medium text-slate-800">Apoyo Emocional (Trámite Virtual)</td>
+                            <td class="p-4">$200.000 COP</td>
+                            <td class="p-4 text-right font-bold text-slate-900">$100.000 COP</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Google Business -->
-      <div class="google-reviews-section">
-        <div class="gr-header">
-          <i class="fa-brands fa-google"></i>
-          <div>
-            <h3>Opiniones en Google</h3>
-            <p>Encuentra más reseñas en nuestro perfil de Google Business</p>
-          </div>
-        </div>
-        <div class="gr-stars">
-          <div class="gr-rating">
-            <!-- REEMPLAZA con tu calificación real -->
-            <span class="gr-num">5.0</span>
-            <div class="gr-star-row">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <!-- Cancelación y Reprogramación -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-600 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                <div class="space-y-2">
+                    <h4 class="font-bold text-slate-800 text-base flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4 text-[#5ba4b7]"></i> Cancelación y Reprogramación</h4>
+                    <p class="leading-relaxed">Los cambios de fecha o cancelaciones de citas son válidos únicamente notificando con un mínimo de **24 horas de antelación**.</p>
+                </div>
+                <div class="space-y-2">
+                    <h4 class="font-bold text-slate-800 text-base flex items-center gap-1.5"><i data-lucide="ban" class="w-4 h-4 text-rose-500"></i> Normas del Consultorio</h4>
+                    <p class="leading-relaxed">**Espacio libre de mascotas:** Prohibido el ingreso de animales. Los adultos asisten **sin acompañantes** a la sala de espera.</p>
+                </div>
             </div>
-            <small>Basado en reseñas de Google</small>
-          </div>
-          <!-- REEMPLAZA con tu enlace de Google Business -->
-          <a href="https://g.page/r/tu-perfil-google" target="_blank" rel="noopener" class="btn btn-outline">
-            <i class="fa-brands fa-google"></i> Ver opiniones en Google
-          </a>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="organic-divider"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 Q150,60 300,30 Q450,0 600,30 Q750,60 900,30 Q1050,0 1200,30" stroke="#C8D8C9" stroke-width="2" fill="none"/></svg></div>
-
-  <!-- ========== FAQ ========== -->
-  <section class="section" id="faq">
-    <div class="container container-narrow">
-      <p class="section-eyebrow centered">Preguntas frecuentes</p>
-      <h2 class="section-title centered">Resolvemos tus <em>dudas</em></h2>
-
-      <div class="accordion">
-
-        <div class="acc-item">
-          <button class="acc-header" aria-expanded="false">
-            <span>¿Cómo sé si necesito ir a psicología?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="acc-body">
-            <p>Si estás experimentando malestar emocional persistente, dificultades en tus relaciones, problemas para funcionar en el trabajo o en la vida cotidiana, o simplemente sientes que algo no está bien, eso es suficiente razón para buscar apoyo. No es necesario estar en crisis para consultar a un psicólogo. La terapia también es un espacio para el autoconocimiento y el crecimiento.</p>
-          </div>
-        </div>
-
-        <div class="acc-item">
-          <button class="acc-header" aria-expanded="false">
-            <span>¿Cuántas sesiones necesitaré?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="acc-body">
-            <p>La duración del proceso depende de cada persona, sus objetivos y la profundidad de las dificultades que trabaja. Algunos procesos duran pocas semanas, otros varios meses. En la primera sesión hacemos una evaluación y establecemos un plan terapéutico con objetivos claros para que tengas una idea realista del tiempo.</p>
-          </div>
-        </div>
-
-        <div class="acc-item">
-          <button class="acc-header" aria-expanded="false">
-            <span>¿La terapia virtual es igual de efectiva que la presencial?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="acc-body">
-            <p>Sí. La investigación científica ha demostrado que la terapia en línea tiene resultados comparables a la presencial para la gran mayoría de las situaciones. Lo más importante es el vínculo terapéutico, la metodología utilizada y el compromiso de la persona en su proceso. Las sesiones virtuales son seguras, confidenciales y efectivas.</p>
-          </div>
-        </div>
-
-        <div class="acc-item">
-          <button class="acc-header" aria-expanded="false">
-            <span>¿Qué pasa en la primera sesión?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="acc-body">
-            <p>La primera sesión es de evaluación y conocimiento mutuo. Exploraremos lo que te trae a consulta, tu historia, tus recursos y tus objetivos. Al final definiremos un plan de trabajo. Es un espacio sin presión: puedes compartir lo que te sientas cómoda/o compartiendo.</p>
-          </div>
-        </div>
-
-        <div class="acc-item">
-          <button class="acc-header" aria-expanded="false">
-            <span>¿La información que comparto es confidencial?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="acc-body">
-            <p>Absolutamente. Todo lo que compartes en consulta está protegido por el secreto profesional y la ética psicológica. La única excepción es cuando existe riesgo inminente para tu vida o la de terceros, en cuyo caso se activan los protocolos éticos y legales correspondientes. Puedes hablar con total confianza.</p>
-          </div>
-        </div>
-
-        <div class="acc-item">
-          <button class="acc-header" aria-expanded="false">
-            <span>¿Atienden urgencias o crisis emocionales?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="acc-body">
-            <p>Si estás atravesando una crisis emocional, escríbeme por WhatsApp y evaluaremos tu situación lo antes posible. En casos de emergencia o riesgo vital inmediato, comunícate con la Línea 106 (Salud Mental Colombia) o acude al servicio de urgencias más cercano.</p>
-          </div>
-        </div>
-
-        <div class="acc-item">
-          <button class="acc-header" aria-expanded="false">
-            <span>¿Trabajan con niños y adolescentes?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="acc-body">
-            <p>Sí. Atiendo infancia, adolescencia, juventud y adultez, adaptando el enfoque terapéutico a la etapa del desarrollo de cada persona. Para niños menores de 12 años, generalmente se incluye orientación a padres o cuidadores como parte del proceso.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <div class="organic-divider"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 Q150,0 300,30 Q450,60 600,30 Q750,0 900,30 Q1050,60 1200,30" stroke="#C8D8C9" stroke-width="2" fill="none"/></svg></div>
-
-  <!-- ========== POLÍTICAS ========== -->
-  <section class="section section-alt" id="politicas">
-    <div class="container container-narrow">
-      <p class="section-eyebrow centered">Políticas</p>
-      <h2 class="section-title centered">Cancelación y <em>reprogramación</em></h2>
-
-      <div class="policy-grid">
-        <div class="policy-card policy-ok">
-          <div class="policy-icon"><i class="fa-solid fa-calendar-xmark"></i></div>
-          <h4>Cancelación sin cargo</h4>
-          <p>Puedes cancelar o reprogramar tu cita <strong>sin costo</strong> si avisas con mínimo <strong>24 horas de anticipación</strong>.</p>
-          <p>El anticipo pagado se abonará a tu próxima sesión sin inconveniente.</p>
-        </div>
-
-        <div class="policy-card policy-warn">
-          <div class="policy-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-          <h4>Cancelación tardía</h4>
-          <p>Las cancelaciones realizadas con <strong>menos de 24 horas</strong> de anticipación, o la no asistencia sin previo aviso, resultarán en la <strong>pérdida del anticipo</strong> pagado.</p>
-        </div>
-
-        <div class="policy-card policy-info">
-          <div class="policy-icon"><i class="fa-solid fa-rotate"></i></div>
-          <h4>Reprogramación</h4>
-          <p>Puedes reprogramar tu cita hasta <strong>2 veces por proceso</strong> con el respectivo aviso de 24 horas. A partir de la tercera reprogramación, se requerirá un nuevo anticipo.</p>
-        </div>
-
-        <div class="policy-card policy-info">
-          <div class="policy-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-          <h4>Tardanza</h4>
-          <p>Si llegas tarde a tu sesión, el tiempo no podrá ser recuperado. La sesión finalizará en su hora programada. Si la tardanza supera 20 minutos, la sesión se considerará no asistida.</p>
-        </div>
-      </div>
-
-      <div class="policy-note">
-        <i class="fa-solid fa-circle-info"></i>
-        <p>Estas políticas existen para garantizar la calidad del servicio y respetar el tiempo de todos. Ante situaciones especiales de fuerza mayor, escríbeme y lo evaluamos juntos con comprensión.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== CONSENTIMIENTO INFORMADO ========== -->
-  <section class="section" id="consentimiento">
-    <div class="container container-narrow">
-      <p class="section-eyebrow centered">Ética profesional</p>
-      <h2 class="section-title centered">Consentimiento <em>Informado</em></h2>
-
-      <div class="consent-card">
-        <div class="consent-intro">
-          <i class="fa-solid fa-file-contract"></i>
-          <p>Antes de iniciar el proceso terapéutico, recibirás el documento de Consentimiento Informado. Al firmarlo, confirmas que has sido informada/o sobre:</p>
-        </div>
-        <div class="consent-grid">
-          <div class="consent-item">
-            <i class="fa-solid fa-check-circle"></i>
-            <span>La <strong>naturaleza y objetivos</strong> del proceso psicológico</span>
-          </div>
-          <div class="consent-item">
-            <i class="fa-solid fa-check-circle"></i>
-            <span>Los <strong>enfoques terapéuticos</strong> a utilizar (TCC y Tercera Generación)</span>
-          </div>
-          <div class="consent-item">
-            <i class="fa-solid fa-check-circle"></i>
-            <span>Los <strong>beneficios y posibles riesgos</strong> de la intervención</span>
-          </div>
-          <div class="consent-item">
-            <i class="fa-solid fa-check-circle"></i>
-            <span>La <strong>confidencialidad</strong> de la información y sus límites</span>
-          </div>
-          <div class="consent-item">
-            <i class="fa-solid fa-check-circle"></i>
-            <span>Tu <strong>derecho a retirarte</strong> del proceso en cualquier momento</span>
-          </div>
-          <div class="consent-item">
-            <i class="fa-solid fa-check-circle"></i>
-            <span>Las <strong>tarifas, horarios y políticas</strong> del servicio</span>
-          </div>
-          <div class="consent-item">
-            <i class="fa-solid fa-check-circle"></i>
-            <span>El uso de plataformas digitales para <strong>sesiones virtuales</strong></span>
-          </div>
-          <div class="consent-item">
-            <i class="fa-solid fa-check-circle"></i>
-            <span>Los <strong>deberes y derechos</strong> del consultante</span>
-          </div>
-        </div>
-        <p class="consent-footer">El consentimiento informado se rige por la <strong>Ley 1090 de 2006</strong> (Código Deontológico y Bioético del Psicólogo en Colombia) y los principios éticos del ejercicio profesional.</p>
-        <a href="#contacto" class="btn btn-outline">Solicitar documento previo a la consulta</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="organic-divider"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 Q150,60 300,30 Q450,0 600,30 Q750,60 900,30 Q1050,0 1200,30" stroke="#C8D8C9" stroke-width="2" fill="none"/></svg></div>
-
-  <!-- ========== CONTACTO ========== -->
-  <section class="section section-alt" id="contacto">
-    <div class="container">
-      <p class="section-eyebrow centered">Contacto</p>
-      <h2 class="section-title centered">¿Tienes dudas? <em>Escríbeme</em></h2>
-      <p class="section-intro">Estoy aquí para responder tus preguntas antes de que inicies tu proceso.</p>
-
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
-            <div>
-              <strong>Correo electrónico</strong>
-              <a href="mailto:psicologa.auraherrera@gmail.com">psicologa.auraherrera@gmail.com</a>
+    <!-- 6. SECCIÓN: AGENDA TU CITA -->
+    <section id="agenda" class="py-20 bg-[#f8fafc] px-6 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-5 space-y-4">
+                <h2 class="font-serif text-3xl lg:text-4xl text-slate-800 leading-tight">Pregúntale a Aura<br><span class="italic text-[#5ba4b7]">Resuelve tus dudas</span></h2>
+                <p class="text-sm text-slate-500 leading-relaxed">Escríbeme directamente si tienes preguntas sobre los enfoques de atención o la modalidad de tu preferencia.</p>
+                <div class="space-y-3 pt-2 text-sm text-slate-600">
+                    <div class="flex items-start gap-2">
+                        <i data-lucide="mail" class="w-4 h-4 text-slate-400 mt-1"></i>
+                        <div><strong>Correo:</strong> psicologa.auraherrera@gmail.com</div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="contact-item">
-            <div class="ci-icon"><i class="fa-brands fa-whatsapp"></i></div>
-            <div>
-              <strong>WhatsApp</strong>
-              <!-- REEMPLAZA con tu número de WhatsApp -->
-              <a href="https://wa.me/573000000000?text=Hola%20Aura%2C%20me%20interesa%20agendar%20una%20sesi%C3%B3n" target="_blank">Enviar mensaje directo</a>
+
+            <div class="lg:col-span-7 bg-white p-6 lg:p-8 rounded-3xl border border-slate-100 shadow-sm space-y-4">
+                <div class="grid grid-cols-1 gap-4 text-sm">
+                    <div>
+                        <label class="block font-medium text-slate-700 mb-1">Nombre completo *</label>
+                        <input type="text" placeholder="Tu nombre" class="w-full p-3 bg-slate-50 rounded-xl border border-slate-200 outline-none focus:border-[#5ba4b7]">
+                    </div>
+                    <div>
+                        <label class="block font-medium text-slate-700 mb-1">WhatsApp / Teléfono *</label>
+                        <input type="text" placeholder="+57 300 000 0000" class="w-full p-3 bg-slate-50 rounded-xl border border-slate-200 outline-none focus:border-[#5ba4b7]">
+                    </div>
+                    <div>
+                        <label class="block font-medium text-slate-700 mb-1">Servicio de interés</label>
+                        <select class="w-full p-3 bg-slate-50 rounded-xl border border-slate-200 text-slate-500 outline-none focus:border-[#5ba4b7]">
+                            <option>Seleccionar servicio...</option>
+                            <option>Adultos Presencial</option>
+                            <option>Adultos Virtual</option>
+                            <option>Infancia y Adolescencia</option>
+                            <option>Trámite Mascota de Apoyo Emocional</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-medium text-slate-700 mb-1">¿En qué puedo ayudarte? *</label>
+                        <textarea rows="3" placeholder="Escribe aquí tu consulta..." class="w-full p-3 bg-slate-50 rounded-xl border border-slate-200 outline-none focus:border-[#5ba4b7] resize-none"></textarea>
+                    </div>
+                </div>
+                <button class="w-full bg-[#7ca693] text-white py-3 rounded-xl font-semibold text-base flex items-center justify-center gap-2 hover:opacity-95 transition-opacity shadow-sm">
+                    <i data-lucide="send" class="w-4 h-4"></i> Enviar mi Consulta
+                </button>
             </div>
-          </div>
-          <div class="contact-item">
-            <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div>
-              <strong>Consultorio presencial</strong>
-              <span>Medellín · Zona Obelisco</span>
+        </div>
+    </section>
+
+    <!-- 7. SECCIÓN: GESTIÓN DOCUMENTAL -->
+    <section id="gestion-documental" class="py-20 bg-white px-6 border-t border-slate-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl lg:text-4xl text-slate-800">Gestión Documental <span class="italic text-[#5ba4b7]">Virtual</span></h2>
             </div>
-          </div>
-          <div class="contact-item">
-            <div class="ci-icon"><i class="fa-solid fa-globe"></i></div>
-            <div>
-              <strong>Atención virtual</strong>
-              <span>Cualquier ciudad o país · Google Meet</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-6 lg:p-8 rounded-2xl border border-slate-100 flex flex-col items-center text-center">
+                    <div class="text-[#5ba4b7] mb-3"><i data-lucide="file-text" class="w-10 h-10"></i></div>
+                    <h3 class="font-semibold text-slate-800 text-base mb-1">Consentimiento Informado</h3>
+                    <p class="text-sm text-slate-500 mb-5 max-w-sm">Firma la autorización digital obligatoria antes de iniciar tu proceso psicoterapéutico.</p>
+                    <a href="#" class="bg-slate-900 text-white px-6 py-2.5 rounded-full font-medium text-sm flex items-center gap-2 hover:bg-slate-800 transition-colors"><i data-lucide="pen-tool" class="w-4 h-4"></i> Firmar digitalmente</a>
+                </div>
+                <div class="bg-slate-50 p-6 lg:p-8 rounded-2xl border border-slate-100 flex flex-col items-center text-center">
+                    <div class="text-[#5ba4b7] mb-3"><i data-lucide="folder-heart" class="w-10 h-10"></i></div>
+                    <h3 class="font-semibold text-slate-800 text-base mb-1">Historia Clínica</h3>
+                    <p class="text-sm text-slate-500 mb-5 max-w-sm">Solicita de manera formal y segura la copia confidencial de tu expediente clínico por correo electrónico.</p>
+                    <a href="#" class="bg-slate-200 text-slate-700 px-6 py-2.5 rounded-full font-medium text-sm flex items-center gap-2 hover:bg-slate-300 transition-colors"><i data-lucide="mail" class="w-4 h-4"></i> Solicitar por correo</a>
+                </div>
             </div>
-          </div>
-
-          <div class="schedule-box">
-            <h4><i class="fa-regular fa-clock"></i> Horarios de atención</h4>
-            <table class="schedule-table">
-              <tbody>
-                <tr><td><strong>Presencial</strong></td><td></td></tr>
-                <tr><td>Lun – Jue</td><td>8:00 am – 6:00 pm</td></tr>
-                <tr><td>Viernes</td><td>8:00 am – 4:00 pm</td></tr>
-                <tr><td>Sábados</td><td>8:00 am – 12:00 pm</td></tr>
-                <tr class="schedule-spacer"><td colspan="2"></td></tr>
-                <tr><td><strong>Virtual</strong></td><td></td></tr>
-                <tr><td>Lun – Dom</td><td>9:00 am – 7:00 pm</td></tr>
-              </tbody>
-            </table>
-          </div>
         </div>
+    </section>
 
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-group">
-            <label for="name">Nombre completo *</label>
-            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Correo electrónico *</label>
-            <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">WhatsApp / Teléfono</label>
-            <input type="tel" id="phone" name="phone" placeholder="+57 300 000 0000" />
-          </div>
-          <div class="form-group">
-            <label for="modality">Modalidad preferida</label>
-            <select id="modality" name="modality">
-              <option value="">Seleccionar...</option>
-              <option value="presencial">Presencial – Medellín</option>
-              <option value="virtual">Virtual</option>
-              <option value="sin-definir">Aún no lo sé</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">¿Cómo puedo ayudarte? *</label>
-            <textarea id="message" name="message" rows="4" placeholder="Cuéntame brevemente lo que te trae o tus preguntas..." required></textarea>
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" id="privacy" name="privacy" required />
-            <label for="privacy">Acepto el tratamiento de mis datos personales para ser contactada/o por la psicóloga Aura Herrera.</label>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">
-            <i class="fa-solid fa-paper-plane"></i> Enviar mensaje
-          </button>
-          <div class="form-success" id="formSuccess" style="display:none;">
-            <i class="fa-solid fa-circle-check"></i> ¡Gracias! Tu mensaje fue enviado. Te responderé pronto.
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <span class="footer-name">Aura Herrera</span>
-          <span class="footer-subtitle">Psicóloga · TCC &amp; Tercera Generación</span>
-          <p>Un espacio seguro para sanar, crecer y encontrarte contigo misma/o.</p>
-          <p class="footer-tp">Matrícula Profesional: <em>[ Agregar número ]</em></p>
+    <!-- 8. SECCIÓN: TESTIMONIOS -->
+    <section id="testimonios" class="py-20 bg-[#f8fafc] px-6 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-sm font-semibold tracking-widest text-[#5ba4b7] uppercase">Experiencias Reales</span>
+                <h2 class="font-serif text-3xl lg:text-4xl text-slate-800 mt-1">Lo que dicen quienes han confiado en este espacio</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="text-amber-400 text-base flex gap-0.5 mb-3">★★★★★</div>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">"Llegué por una crisis de ansiedad que no me dejaba dormir. Con la Dra. Aura encontré un espacio sin juicios, donde aprendí a entender mis alarmas y a respirar de nuevo."</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-400">
+                        <strong class="text-slate-700 block text-sm">Camila M.</strong> Medellín (Adultos Virtual)
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="text-amber-400 text-base flex gap-0.5 mb-3">★★★★★</div>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">"El proceso individual por dependencia emocional me cambió la vida. Es retador, pero la calidez de la doctora te hace sentir muy segura en cada sesión."</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-400">
+                        <strong class="text-slate-700 block text-sm">Juan Carlos G.</strong> Envigado (Adultos Presencial)
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="text-amber-400 text-base flex gap-0.5 mb-3">★★★★★</div>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">"Buscamos orientación para las pautas de crianza de nuestro hijo adolescente. El enfoque integral y la paciencia con la que abordó la situación nos devolvió la paz."</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-400">
+                        <strong class="text-slate-700 block text-sm">Familia Restrepo Tobón</strong> Sabaneta
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="text-amber-400 text-base flex gap-0.5 mb-3">★★★★★</div>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">"Viví un duelo muy pesado tras una ruptura. En estas consultas encontré el apoyo para reconstruir mi identidad paso a paso. Te enseñan a sanar de verdad."</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-400">
+                        <strong class="text-slate-700 block text-sm">Catalina S.</strong> Bogotá (Adultos Virtual)
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-links">
-          <h5>Navegación</h5>
-          <a href="#sobre-mi">Sobre mí</a>
-          <a href="#servicios">Servicios y tarifas</a>
-          <a href="#especialidades">Especialidades</a>
-          <a href="#testimonios">Testimonios</a>
-          <a href="#faq">Preguntas frecuentes</a>
-        </div>
-        <div class="footer-links">
-          <h5>Legal</h5>
-          <a href="#politicas">Políticas de cancelación</a>
-          <a href="#consentimiento">Consentimiento informado</a>
-          <a href="#pagos">Información de pagos</a>
-        </div>
-        <div class="footer-contact">
-          <h5>Contacto</h5>
-          <a href="mailto:psicologa.auraherrera@gmail.com"><i class="fa-solid fa-envelope"></i> psicologa.auraherrera@gmail.com</a>
-          <!-- REEMPLAZA con tu número real -->
-          <a href="https://wa.me/573000000000" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-          <p><i class="fa-solid fa-location-dot"></i> Medellín · Zona Obelisco</p>
-          <p><i class="fa-solid fa-globe"></i> Atención virtual mundial</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© <span id="year"></span> Psicóloga Aura Herrera · Todos los derechos reservados</p>
-        <p class="footer-disclaimer">Este sitio web es de carácter informativo y no reemplaza la atención psicológica profesional. En caso de emergencia llama a la Línea 106.</p>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- ========== BOTÓN WHATSAPP FLOTANTE ========== -->
-  <!-- REEMPLAZA el número con tu WhatsApp real -->
-  <a href="https://wa.me/573000000000?text=Hola%20Aura%2C%20me%20interesa%20agendar%20una%20sesi%C3%B3n%20de%20psicolog%C3%ADa" 
-     class="whatsapp-float" 
-     target="_blank" 
-     rel="noopener"
-     aria-label="Chatear por WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-    <span class="wa-tooltip">¡Escríbeme!</span>
-  </a>
+    <!-- 9. SECCIÓN: PREGUNTAS FRECUENTES -->
+    <section id="preguntas" class="py-20 bg-white px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl lg:text-4xl text-slate-800">Preguntas <span class="italic text-[#5ba4b7]">Frecuentes</span></h2>
+            </div>
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="w-full text-left p-5 font-semibold text-slate-700 text-base flex justify-between items-center bg-white hover:bg-slate-50" onclick="toggleFaq(this)">
+                        ¿Cómo valido el agendamiento de mi cita?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="p-5 pt-0 text-sm sm:text-base text-slate-600 hidden bg-white border-t border-slate-50 leading-relaxed">
+                        Una vez realices la transferencia del 50% de anticipo para separar tu espacio y nos envíes el respectivo comprobante, procederemos con la confirmación de tu cita asignándote la fecha, hora y el enlace correspondiente de Google Meet si tu modalidad elegida es virtual.
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button class="w-full text-left p-5 font-semibold text-slate-700 text-base flex justify-between items-center bg-white hover:bg-slate-50" onclick="toggleFaq(this)">
+                        ¿Cómo se manejan las consultas con menores de edad?
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="p-5 pt-0 text-sm sm:text-base text-slate-600 hidden bg-white border-t border-slate-50 leading-relaxed">
+                        Toda intervención psicológica o acompañamiento psychoeducativo dirigido a niños o adolescentes requiere estrictamente de la lectura completa y la firma física o digital del Consentimiento Informado por parte de sus padres o representantes legales antes de dar inicio formal a la primera sesión.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ========== BOTÓN SCROLL TOP ========== -->
-  <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
+    <!-- 10. SECCIÓN: CONTACTO, REDES Y UBICACIÓN -->
+    <section id="contacto" class="py-20 bg-[#f8fafc] px-6 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl lg:text-4xl text-slate-800">Contacto y <span class="italic text-[#5ba4b7]">Ubicación</span></h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="font-semibold text-slate-800 text-xl mb-4">Canales de Atención</h3>
+                        <ul class="space-y-4 text-sm sm:text-base text-slate-600">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-slate-400 shrink-0 mt-0.5"></i>
+                                <span><strong>Dirección del Consultorio:</strong> Carrera 73 # 45 f 23, Florida Nueva, Estadio, Medellín</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i data-lucide="phone" class="w-5 h-5 text-slate-400 shrink-0"></i>
+                                <span><strong>WhatsApp Directo:</strong> 3021011261</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Botones de Redes Oficiales -->
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://wa.me/573021011261" target="_blank" class="bg-[#25D366] text-white px-5 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 hover:opacity-90 shadow-sm transition-opacity">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
+                        </a>
+                        <a href="#" target="_blank" class="bg-[#E1306C] text-white px-5 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 hover:opacity-90 shadow-sm transition-opacity">
+                            <i data-lucide="instagram" class="w-4 h-4"></i> Instagram
+                        </a>
+                        <a href="#" target="_blank" class="bg-black text-white px-5 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 hover:opacity-90 shadow-sm transition-opacity">
+                            ⚡ TikTok
+                        </a>
+                    </div>
+                </div>
 
-  <script src="script.js"></script>
+                <!-- Google Maps Integrado con dirección real -->
+                <div class="bg-white p-5 rounded-3xl border border-slate-100 shadow-sm space-y-4">
+                    <span class="text-xs font-bold text-slate-400 block uppercase tracking-wider">Ubicación Geográfica</span>
+                    <div class="w-full h-64 bg-slate-100 rounded-2xl overflow-hidden relative border border-slate-100">
+                        <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0526702677113!2d-75.59103522396155!3d6.256793193731557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44289ff7181079%3A0x6b77242a42095f46!2sCra.%2073%20%2345f-23%2C%20La%20Candelaria%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1710000000000!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <a href="https://maps.app.goo.gl/r6fDAsxPZqgAEvZf8" target="_blank" class="w-full bg-[#3b82f6] text-white text-center py-3 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 hover:bg-blue-600 transition-colors">
+                        <i data-lucide="map" class="w-4 h-4"></i> Abrir en Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVIDAD DE MENÚS Y COMPORTAMIENTO -->
+    <script>
+        // Inicializa todos los iconos Lucide en pantalla
+        lucide.createIcons();
+
+        // Desplegar y contraer preguntas frecuentes
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('[data-lucide="chevron-down"]');
+            
+            content.classList.toggle('hidden');
+            if (content.classList.contains('hidden')) {
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
 </body>
 </html>
