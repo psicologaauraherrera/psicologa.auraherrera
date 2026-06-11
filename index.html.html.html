@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicóloga Aura Herrera - Atención Clínica y Educativa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght=0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght=300;400;500;600&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        
+        /* Estilos para controlar el despliegue del menú */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-[#334155] antialiased text-base">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 px-6 py-4 transition-all shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-[#b0d4de]/30 rounded-xl flex items-center justify-center border border-[#b0d4de] overflow-hidden shadow-sm">
+                    <img src="logo.png" alt="Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover">
+                    <div class="hidden flex-col items-center justify-center text-slate-700 font-bold text-xs">
+                        <span>Psi</span>
+                    </div>
+                </div>
+                <span class="font-semibold text-slate-800 text-lg tracking-wide">Aura Herrera</span>
+            </div>
+            
+            <nav class="hidden lg:flex gap-8 text-sm font-semibold text-slate-600 items-center">
+                <a href="#sobre-mi" class="hover:text-[#5ba4b7] transition-colors">Sobre Mí</a>
+                <a href="#investigaciones" class="hover:text-[#5ba4b7] transition-colors">Investigaciones</a>
+                
+                <div class="relative dropdown py-2">
+                    <button class="hover:text-[#5ba4b7] transition-colors flex items-center gap-1 focus:outline-none">
+                        Servicios 
+                        <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400"></i>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-56 bg-white border border-slate-100 rounded-xl shadow-xl hidden dropdown-menu overflow-hidden z-50 animate-in fade-in duration-200">
+                        <a href="#especialidades" class="block px-5 py-3 text-slate-600 hover:bg-slate-50 hover:text-[#5ba4b7] transition-colors border-b border-slate-50">Especialidades</a>
+                        <a href="#servicios" class="block px-5 py-3 text-slate-600 hover:bg-slate-50 hover:text-[#5ba4b7] transition-colors border-b border-slate-50">Tarifas de Servicios</a>
+                        <a href="#politicas" class="block px-5 py-3 text-slate-600 hover:bg-slate-50 hover:text-[#5ba4b7] transition-colors border-b border-slate-50">Políticas y Pagos</a>
+                        <a href="#gestion-documental" class="block px-5 py-3 text-slate-600 hover:bg-slate-50 hover:text-[#5ba4b7] transition-colors">Gestión Documental</a>
+                    </div>
+                </div>
+
+                <a href="#agenda" class="hover:text-[#5ba4b7] transition-colors">Agenda tu Cita</a>
+                <a href="#testimonios" class="hover:text-[#5ba4b7] transition-colors">Testimonios</a>
+                <a href="#preguntas" class="hover:text-[#5ba4b7] transition-colors">Preguntas</a>
+                <a href="#contacto" class="hover:text-[#5ba4b7] transition-colors">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre-mi" class="py-20 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+            <h1 class="font-serif text-4xl lg:text-5xl text-[#1e293b] leading-tight font-medium">
+                Atención Psicología Clínica y Educativa con Enfoque Humano
+            </h1>
+            <p class="text-lg text-slate-600 leading-relaxed max-w-xl">
+                Hola, soy la Psicóloga Aura Herrera. Ofrezco un espacio seguro de psicoterapia en Medellín y en modalid virtual, diseñado para ayudarte a comprender tus procesos emocionales y potenciar tu bienestar integral.
+            </p>
+            <div class="pt-2">
+                <a href="#agenda" class="inline-flex items-center gap-2 bg-[#1e293b] text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-slate-800 transition-colors shadow-sm">
+                    <i data-lucide="calendar" class="w-5 h-5"></i> Agenda tu Cita Aquí
+                </a>
+            </div>
+        </div>
+        <div class="lg:col-span-5 flex justify-center">
+            <div class="relative w-72 h-72 lg:w-80 lg:h-80 rounded-full bg-[#1e293b] overflow-hidden border-[12px] border-[#b0d4de]/40 shadow-md flex items-center justify-center">
+                <img src="perfil.jpg" alt="Psicóloga Aura Herrera" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover">
+                <div class="hidden absolute inset-0 flex-col items-center justify-center text-white p-6 text-center">
+                    <p class="font-serif text-2xl mb-1">Aura Herrera</p>
+                    <p class="text-xs uppercase tracking-wider text-[#b0d4de]">Psicóloga Clínica</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="investigaciones" class="py-20 bg-white border-y border-slate-100 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-sm font-semibold tracking-widest text-[#5ba4b7] uppercase">Academia</span>
+                <h2 class="font-serif text-3xl lg:text-4xl text-slate-800 mt-1">Trayectoria e <span class="italic text-[#5ba4b7]">Investigación</span></h2>
+                <p class="text-slate-500 mt-2 text-base max-w-xl mx-auto">Artículos científicos y publicaciones académicas indexadas orientadas al análisis social y educativo.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Publicación 1 -->
+                <div class="border-l-4 border-[#b0d4de] bg-slate-50 p-6 flex flex-col justify-between rounded-r-2xl hover:shadow-sm transition-shadow min-h-[180px]">
+                    <div>
+                        <h4 class="font-semibold text-slate-800 text-base mb-1 leading-snug">Cognición social en la esquizofrenia</h4>
+                        <span class="text-xs text-slate-400 block uppercase tracking-wider mb-4">Revista Subjetividad y Sociedad</span>
+                    </div>
+                    <a href="https://portalweb-uniminuto.s3.amazonaws.com/activos_digitales/RAC/Revista+SUBJETIVIDAD+Y+SOCIEDAD/Revista+edici%C3%B3n+9+final-comprimido.pdf" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-600 font-medium flex items-center gap-1 hover:text-slate-900">Leer publicación <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                </div>
+                <!-- Publicación 2 -->
+                <div class="border-l-4 border-[#b0d4de] bg-slate-50 p-6 flex flex-col justify-between rounded-r-2xl hover:shadow-sm transition-shadow min-h-[180px]">
+                    <div>
+                        <h4 class="font-semibold text-slate-800 text-base mb-1 leading-snug">Memoria a corto y largo plazo, atención selectiva y cognición social en pacientes con esquizofrenia</h4>
+                        <span class="text-xs text-slate-400 block uppercase tracking-wider mb-4">Revista Iberoamericana de Psicología</span>
+                    </div>
+                    <a href="https://reviberopsicologia.ibero.edu.co/article/view/2473" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-600 font-medium flex items-center gap-1 hover:text-slate-900">Ver artículo <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                </div>
+                <!-- Publicación 3 -->
+                <div class="border-l-4 border-[#b0d4de] bg-slate-50 p-6 flex flex-col justify-between rounded-r-2xl hover:shadow-sm transition-shadow min-h-[180px]">
+                    <div>
+                        <h4 class="font-semibold text-slate-800 text-base mb-1 leading-snug">Perfil neuropsicológico en pacientes con esquizofrenia de acuerdo con el nivel de adherencia a la medicación</h4>
+                        <span class="text-xs text-slate-400 block uppercase tracking-wider mb-4">Revista Iberoamericana de Psicología</span>
+                    </div>
+                    <a href="https://reviberopsicologia.ibero.edu.co/article/view/2672" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-600 font-medium flex items-center gap-1 hover:text-slate-900">Ver artículo <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                </div>
+                <!-- Publicación 4 -->
+                <div class="border-l-4 border-[#b0d4de] bg-slate-50 p-6 flex flex-col justify-between rounded-r-2xl hover:shadow-sm transition-shadow min-h-[180px]">
+                    <div>
+                        <h4 class="font-semibold text-slate-800 text-base mb-1 leading-snug">Estudio de caso sobre las consecuencias emocionales del abuso sexual en mujer víctima por parte del padrastro en Medellín-Antioquia en el 2020</h4>
+                        <span class="text-xs text-slate-400 block uppercase tracking-wider mb-4">Repositorio UNIMINUTO</span>
+                    </div>
+                    <a href="https://repository.uniminuto.edu/items/6a03d911-390f-4f44-929e-72b387c5cbec" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-600 font-medium flex items-center gap-1 hover:text-slate-900">Explorar tesis <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="especialidades" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-sm font-semibold tracking-widest text-[#5ba4b7] uppercase">Enfoques de Atención</span>
+            <h2 class="font-serif text-3xl lg:text-4xl text-slate-800 mt-1">Especialidades Clínicas y Población</h2>
+            <p class="text-slate-500 mt-2 text-base max-w-xl mx-auto">Acompañamiento profesional y adaptado según el ciclo vital.</p>
+        </div>
+
+        <div class="bg-slate-100 p-2 rounded-2xl max-w-3xl mx-auto mb-12 flex flex-wrap justify-between gap-1 text-center text-sm font-semibold text-slate-600">
+            <span class="flex-1 py-3.5 px-4 rounded-xl">🧸 Infancia</span>
+            <span class="flex-1 py-3.5 px-4 rounded-xl">🎒 Adolescencia</span>
+            <span class="flex-1 py-3.5 px-4 rounded-xl">🌱 Juventud</span>
+            <span class="flex-1 py-3.5 px-4 rounded-xl">💼 Adultez</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-all">
+                <h4 class="font-semibold text-slate-800 text-lg mb-2 flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#5ba4b7]"></span> Ansiedad</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Técnicas para gestionar pensamientos intrusivos, ataques de pánico y preocupación excesiva.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-all">
+                <h4 class="font-semibold text-slate-800 text-lg mb-2 flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#5ba4b7]"></span> Depresión</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Acompañamiento en procesos de tristeza profunda, desmotivación y pérdida de sentido de vida.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-all">
+                <h4 class="font-semibold text-slate-800 text-lg mb-2 flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#5ba4b7]"></span> Estrés</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Herramientas para manejar la sobrecarga académica, el agotamiento laboral y el equilibrio emocional.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-all">
+                <h4 class="font-semibold text-slate-800 text-lg mb-2 flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#5ba4b7]"></span> Duelo</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Apoyo sensible ante pérdidas significativas de seres queridos, relaciones o transiciones de vida.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-all">
+                <h4 class="font-semibold text-slate-800 text-lg mb-2 flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#5ba4b7]"></span> Autoestima</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Trabajo en autoimagen, autocompasión y la construcción sólida de la valía personal.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white border border-slate-100 hover:shadow-md transition-all">
+                <h4 class="font-semibold text-slate-800 text-lg mb-2 flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#5ba4b7]"></span> Dependencia Emocional</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Orientación para reconocer patrones vinculares dependientes y construir relaciones sanas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-20 bg-[#f1f5f9] px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-sm font-semibold tracking-widest text-[#5ba4b7] uppercase">Portafolio</span>
+                <h2 class="font-serif text-3xl lg:text-4xl text-slate-800 mt-1">¿Cómo puedo <span class="italic text-[#5ba4b7]">acompañarte?</span></h2>
+                <p class="text-slate-500 mt-2 text-base max-w-xl mx-auto">Ofrezco atención psicológica adaptada a tu tiempo, espacio y necesidades actuales.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm flex flex-col justify-between min-h-[480px]">
+                    <div>
+                        <div class="bg-slate-50 w-11 h-11 rounded-xl flex items-center justify-center text-slate-700 mb-5"><i data-lucide="building"></i></div>
+                        <h3 class="font-serif text-2xl text-slate-800 mb-3">Adultos Presencial</h3>
+                        <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                            <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> Medellín · Zona Estadio</li>
+                            <li class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4"></i> 60 minutos por sesión</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 leading-relaxed">Un espacio físico idóneo y confidencial enfocado en tu salud mental y procesos clínicos individuales.</p>
+                    </div>
+                    <div class="mt-6">
+                        <div class="bg-slate-50 rounded-xl p-3 mb-4 text-sm">
+                            <div class="flex justify-between mb-1"><span>Individual</span><span class="font-semibold text-slate-800">$100.000</span></div>
+                            <div class="flex justify-between text-emerald-600 font-medium"><span>Paquete 4 ses.</span><span>$380.000</span></div>
+                        </div>
+                        <a href="#agenda" class="block text-center border border-slate-800 text-slate-800 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 hover:text-white transition-colors">Agendar presencial</a>
+                    </div>
+                </div>
+
+                <div class="bg-white border-2 border-[#b0d4de] rounded-3xl p-6 shadow-sm flex flex-col justify-between min-h-[480px] relative">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#b0d4de] text-slate-800 text-xs font-bold px-4 py-0.5 rounded-full uppercase tracking-wider">Más Elegido</span>
+                    <div>
+                        <div class="bg-slate-900 w-11 h-11 rounded-xl flex items-center justify-center text-white mb-5"><i data-lucide="video"></i></div>
+                        <h3 class="font-serif text-2xl text-slate-800 mb-3">Adultos Virtual</h3>
+                        <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                            <li class="flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4"></i> Cobertura global · Online</li>
+                            <li class="flex items-center gap-2"><i data-lucide="video" class="w-4 h-4"></i> Vía Google Meet</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 leading-relaxed">Conecta desde cualquier lugar del mundo con total comodidad, flexibilidad horaria y confidencialidad.</p>
+                    </div>
+                    <div class="mt-6">
+                        <div class="bg-slate-50 rounded-xl p-3 mb-4 text-sm">
+                            <div class="flex justify-between mb-1"><span>Individual</span><span class="font-semibold text-slate-800">$80.000</span></div>
+                            <div class="flex justify-between text-emerald-600 font-medium"><span>Paquete 4 ses.</span><span>$300.000</span></div>
+                        </div>
+                        <a href="#agenda" class="block text-center bg-slate-900 text-white py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition-colors">Agendar virtual</a>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm flex flex-col justify-between min-h-[480px]">
+                    <div>
+                        <div class="bg-slate-50 w-11 h-11 rounded-xl flex items-center justify-center text-slate-700 mb-5"><i data-lucide="smile"></i></div>
+                        <h3 class="font-serif text-2xl text-slate-800 mb-3">Infancia y Adolescencia</h3>
+                        <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4"></i> Enfoque Co-educativo</li>
+                            <li class="flex items-center gap-2"><i data-lucide="home" class="w-4 h-4"></i> Presencial o Virtual</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 leading-relaxed">Acompañamiento clínico en ajuste socioemocional, conducta infantil y pautas de crianza familiar.</p>
+                    </div>
+                    <div class="mt-6">
+                        <div class="bg-slate-50 rounded-xl p-3 mb-4 text-sm">
+                            <div class="flex justify-between mb-1"><span>Presencial</span><span class="font-semibold text-slate-800">$120.000</span></div>
+                            <div class="flex justify-between text-emerald-600 font-medium"><span>Paquete (Virtual)</span><span>$450.000</span></div>
+                        </div>
+                        <a href="#agenda" class="block text-center border border-slate-800 text-slate-800 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 hover:text-white transition-colors">Agendar consulta</a>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-sm flex flex-col justify-between min-h-[480px]">
+                    <div>
+                        <div class="bg-slate-50 w-11 h-11 rounded-xl flex items-center justify-center text-slate-700 mb-5"><i data-lucide="heart-handshake"></i></div>
+                        <h3 class="font-serif text-2xl text-slate-800 mb-3">Apoyo Emocional</h3>
+                        <ul class="space-y-2 text-sm text-slate-500 mb-4">
+                            <li class="flex items-center gap-2"><i data-lucide="award" class="w-4 h-4"></i> Soporte Oficial</li>
+                            <li class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4"></i> Vigencia de <strong>1 año</strong></li>
+                        </ul>
+                        <p class="text-sm text-slate-600 leading-relaxed">Evaluación para mascotas de asistencia. Se prefiere entorno virtual para evaluar la conducta natural del animal.</p>
+                    </div>
+                    <div class="mt-6">
+                        <div class="bg-slate-50 rounded-xl p-3 mb-4 text-sm">
+                            <div class="flex justify-between mb-1"><span>Trámite Virtual</span><span class="font-semibold text-slate-800">$200.000</span></div>
+                            <div class="flex justify-between"><span>Trámite Presencial</span><span class="font-semibold text-slate-800">$250.000</span></div>
+                        </div>
+                        <a href="#agenda" class="block text-center border border-slate-800 text-slate-800 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 hover:text-white transition-colors">Solicitar trámite</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="politicas" class="py-20 bg-white px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-sm font-semibold tracking-widest text-[#5ba4b7] uppercase">Lineamientos</span>
+                <h2 class="font-serif text-3xl lg:text-4xl text-slate-800 mt-1">Políticas de Reserva y Cancelación</h2>
+            </div>
+
+            <div class="bg-rose-50 border border-dashed border-rose-200 rounded-3xl p-6 lg:p-8 mb-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                <div class="md:col-span-8 space-y-3">
+                    <h3 class="text-rose-700 font-bold text-lg flex items-center gap-2 mb-1">
+                        <i data-lucide="wallet" class="w-5 h-5"></i> Pago de la cita con anticipo para confirmar (50%)
+                    </h3>
+                    <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                        Para asegurar y bloquear tu espacio en la agenda de manera formal, se requiere obligatoriamente el **50% del valor total de la sesión** por adelantado. El saldo restante se cancela al finalizar la consulta.
+                    </p>
+                    <div class="pt-2">
+                        <span class="inline-block bg-white px-4 py-2 rounded-xl border border-rose-100 font-semibold text-sm sm:text-base text-slate-700 shadow-sm">
+                            💰 Celular Nequi: <strong class="font-mono text-rose-700">3216042811</strong>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-4 flex justify-center">
+                    <div class="bg-white p-4 rounded-2xl border border-rose-100 w-full max-w-[250px] text-center shadow-sm">
+                        <div class="flex items-center justify-center gap-1 mb-2">
+                            <span class="text-[10px] font-bold text-[#00d4b2]">Bre-B</span>
+                            <span class="text-slate-300">|</span>
+                            <span class="text-[10px] font-bold text-[#47127a]">Nequi</span>
+                        </div>
+                        <div class="w-full aspect-square bg-slate-50 rounded-xl flex flex-col items-center justify-center text-xs text-slate-400 border border-dashed border-slate-200 p-2 overflow-hidden">
+                            <img src="qr-nequi.png" alt="Código QR Nequi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-contain aspect-square">
+                            <div class="hidden flex-col items-center justify-center text-center">
+                                <i data-lucide="qr-code" class="w-8 h-8 mb-1 text-slate-300"></i>
+                                <span class="text-[10px]">Escanear QR</span>
+                            </div>
+                        </div>
+                        <p class="text-xs font-bold text-slate-800 mt-2">Aura Herrera</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-8 border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
+                <table class="w-full text-left border-collapse text-sm sm:text-base">
+                    <thead>
+                        <tr class="bg-slate-50 border-b border-slate-100 text-slate-700 font-bold">
+                            <th class="p-4">Servicio Clínico</th>
+                            <th class="p-4">Tarifa Plena</th>
+                            <th class="p-4 text-rose-700 text-right">Anticipo de Confirmación (50%)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-600">
+                        <tr>
+                            <td class="p-4 font-medium text-slate-800">Adultos Presencial</td>
+                            <td class="p-4">$100.000 COP</td>
+                            <td class="p-4 text-right font-bold text-slate-900">$50.000 COP</td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                            <td class="p-4 font-medium text-slate-800">Adultos Virtual</td>
+                            <td class="p-4">$80.000 COP</td>
+                            <td class="p-4 text-right font-bold text-slate-900">$40.000 COP</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium text-slate-800">Infancia y Adolescencia (Presencial)</td>
+                            <td class="p-4">$120.000 COP</td>
+                            <td class="p-4 text-right font-bold text-slate-900">$60.000 COP</td>
+                        </tr>
+                        <tr class="bg-slate-50/50">
+                            <td class="p-4 font-medium text-slate-800">Apoyo Emocional (Trámite Virtual)</td>
+                            <td class="p-4">$200.000 COP</td>
+                            <td class="p-4 text-right font-bold text-slate-900">$100.000 COP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-600 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                <div class="space-y-2">
+                    <h4 class="font-bold text-slate-800 text-base flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4 text-[#5ba4b7]"></i> Cancelación y Reprogramación</h4>
+                    <p class="leading-relaxed">Los cambios de fecha o cancelaciones de citas son válidos únicamente notificando con un mínimo de **24 horas de antelación**.</p>
+                </div>
+                <div class="space-y-2">
+                    <h4 class="font-bold text-slate-800 text-base flex items-center gap-1.5"><i data-lucide="ban" class="w-4 h-4 text-rose-500"></i> Normas del Consultorio</h4>
+                    <p class="leading-relaxed">**Espacio libre de mascotas:** Prohibido el ingreso de animales. Los adultos asisten **sin acompañantes** a la sala de espera.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agenda" class="py-20 bg-[#f8fafc] px-6 border-t border-slate-100">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5 space-y-4">
+            <h2 class="font-serif text-3xl lg:text-4xl text-slate-800 leading-tight">Pregúntale a Aura<br><span class="italic text-[#5ba4b7]">Resuelve tus dudas</span></h2>
+            <p class="text-sm text-slate-500 leading-relaxed">Completa este formulario y recibiré tu consulta directamente en mi correo electrónico para darte una respuesta personalizada.</p>
+        </div>
+
+        <div class="lg:col-span-7 bg-white p-6 lg:p-8 rounded-3xl border border-slate-100 shadow-sm">
+            <form action="https://formspree.io/f/xeewrozq" method="POST" class="space-y-4 text-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-medium text-slate-700 mb-1">Nombre completo *</label>
+                        <input type="text" name="nombre" required class="w-full p-3 bg-slate-50 rounded-xl border border-slate-200 outline-none focus:border-[#5ba4b7]">
+                    </div>
+                    <div>
+                        <label class="block font-medium text-slate-700 mb-1">Cédula *</label>
+                        <input type="text" name="cedula" required class="w-full p-3 bg-slate-50 rounded-xl border border-slate-200 outline-none focus:border-[#5ba4b7]">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-medium text-slate-700 mb-1">Edad *</label>
+                        <input type="number" name="edad" required class="w-full p-3 bg-slate-50 rounded-xl border border-slate-200 outline-none focus:border-[#5ba4b7]">
+                    </div>
+                    <div>
+                        <label class="block font-medium text-slate-700 mb-1">Correo electrónico *</label>
+                        <input type="email" name="email" required class="w-full p-3 bg-slate-50 rounded-xl border border-slate-200 outline-none focus:border-[#5ba4b7]">
+                    </div>
+                </div>
+                <div>
+                    <label class="block font-medium text-slate-700 mb-1">WhatsApp *</label>
+                    <input type="tel" name="whatsapp" required class="w-full p-3 bg-slate-50 rounded-xl border border-slate-200 outline-none focus:border-[#5ba4b7]">
+                </div>
+                <div>
+                    <label class="block font-medium text-slate-700 mb-1">Servicio de interés</label>
+                    <select name="servicio" class="w-full p-3 bg-slate-50 rounded-xl border border-slate-200 text-slate-500 outline-none focus:border-[#5ba4b7]">
+                        <option>Adultos Presencial</option>
+                        <option>Adultos Virtual</option>
+                        <option>Infancia y Adolescencia</option>
+                        <option>Trámite Mascota de Apoyo Emocional</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-medium text-slate-700 mb-1">¿En qué puedo ayudarte? *</label>
+                    <textarea name="mensaje" rows="3" required class="w-full p-3 bg-slate-50 rounded-xl border border-slate-200 outline-none focus:border-[#5ba4b7] resize-none"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-[#7ca693] text-white py-3 rounded-xl font-semibold text-base hover:opacity-95 transition-opacity shadow-sm">
+                    Enviar mi Consulta
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- SECCIÓN CONTACTO: Enlace del botón azul optimizado y corregido -->
+    <section id="contacto" class="py-20 bg-white px-6 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-serif text-3xl lg:text-4xl text-center text-slate-800 mb-12">
+                Contacto y <span class="italic text-[#5ba4b7]">Ubicación</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Canales de Atención -->
+                <div class="lg:col-span-5 space-y-6">
+                    <h3 class="text-xl font-bold text-slate-800 tracking-wide">Canales de Atención</h3>
+                    
+                    <div class="space-y-4 text-slate-600">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0"></i>
+                            <p class="text-base">
+                                <strong class="text-slate-800">Dirección del Consultorio:</strong> Carrera 73 # 45 f 23, Florida Nueva, Estadio, Medellín.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-slate-400 flex-shrink-0"></i>
+                            <p class="text-base">
+                                <strong class="text-slate-800">WhatsApp Directo:</strong> 3021011261
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Botones de Redes Sociales -->
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <a href="https://wa.me/573021011261" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-full font-semibold text-sm shadow-sm hover:opacity-90 transition-opacity">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/psicologa.auraherrera/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#E1306C] text-white px-5 py-2.5 rounded-full font-semibold text-sm shadow-sm hover:opacity-90 transition-opacity">
+                            <i data-lucide="instagram" class="w-4 h-4"></i> Instagram
+                        </a>
+                        <a href="https://www.tiktok.com/@psicologaauraherrera" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-full font-semibold text-sm shadow-sm hover:opacity-90 transition-opacity">
+                            <span class="font-bold">⚡</span> TikTok
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recuadro del Mapa e Iframe -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white border border-slate-100 rounded-3xl p-6 shadow-xl max-w-2xl mx-auto space-y-4">
+                        <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Ubicación Geográfica</span>
+                        
+                        <div class="w-full aspect-[16/9] rounded-2xl overflow-hidden border border-slate-200 shadow-inner">
+                            <iframe 
+                                src="https://maps.google.com/maps?q=Carrera%2073%20%23%2045%20f%2023,%20Medellin&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                                class="w-full h-full border-0" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+
+                        <!-- Botón Enlace Limpio Corregido -->
+                        <a href="https://maps.google.com/maps?q=Carrera%2073%20%23%2045%20f%2023,%20Medellin&z=15" target="_blank" rel="noopener noreferrer" class="w-full bg-[#4285F4] text-white py-3 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 hover:bg-blue-600 transition-colors shadow-sm text-center block">
+                            <i data-lucide="map" class="w-4 h-4"></i> Abrir en Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gestion-documental" class="py-20 bg-[#f8fafc] px-6 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <h2 class="font-serif text-3xl text-slate-800">Gestión Documental</h2>
+            <p class="text-sm text-slate-500 leading-relaxed max-w-xl mx-auto">Espacio reservado para la administración transparente de consentimientos informados, historias clínicas y certificaciones institucionales.</p>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 text-xs py-8 text-center px-6 space-y-4">
+        <div class="flex justify-center gap-6 text-sm mb-2">
+            <a href="https://www.instagram.com/psicologa.auraherrera/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1">
+                📸 Instagram
+            </a>
+            <a href="https://www.tiktok.com/@psicologaauraherrera" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1">
+                🎵 TikTok
+            </a>
+        </div>
+        <p>© 2026 Psicóloga Aura Herrera. Todos los derechos reservados. Medellín, Colombia.</p>
+    </footer>
+
+    <script>
+        // Inicializar los iconos de Lucide automáticamente
+        lucide.createIcons();
+    </script>
+</body>
+</html>
