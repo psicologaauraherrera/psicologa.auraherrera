@@ -478,13 +478,37 @@
         </div>
     </section>
 <!-- Sección de Horarios de Atención -->
-<section id="horarios" style="padding: 40px 20px; text-align: center;">
-    <h2 style="font-weight: 300; letter-spacing: 1px;">Horarios de Atención</h2>
+<section id="horarios" style="padding: 40px 20px; text-align: center; font-family: sans-serif;">
+    <style>
+        .horarios-minimalista {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        .horarios-minimalista th, .horarios-minimalista td {
+            padding: 15px 20px;
+            text-align: center;
+            border: none;
+            color: #333;
+        }
+        .horarios-minimalista th {
+            font-weight: bold;
+            color: #555;
+            text-transform: uppercase;
+            font-size: 0.85em;
+        }
+        .horarios-minimalista tr {
+            border-bottom: 1px solid #f0f0f0;
+        }
+    </style>
+
+    <h2 style="font-weight: 300; letter-spacing: 1px; color: #333;">Horarios de Atención</h2>
     <p style="color: #666; margin-bottom: 30px;">Gestiona tu bienestar con nuestra disponibilidad</p>
     
     <table class="horarios-minimalista">
         <thead>
-            <tr style="color: #888; font-weight: normal;">
+            <tr>
                 <th>Día</th>
                 <th>Presencial</th>
                 <th>Virtual</th>
