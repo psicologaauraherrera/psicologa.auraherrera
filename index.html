@@ -709,30 +709,40 @@
     
     <p>© 2026 Psicóloga Aura Herrera. Todos los derechos reservados. Medellín, Colombia.</p>
 </footer>
-<!-- Botón que abre el chat -->
-<div id="chat-widget" class="fixed bottom-6 left-6 z-50">
-  <div id="chat-window" class="hidden mb-4 w-72 bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
-    <!-- Header del chat -->
-    <div class="bg-green-500 p-4 text-white flex justify-between items-center">
-      <span class="font-bold">WhatsApp</span>
-      <button onclick="toggleChat()" class="text-white">✕</button>
+<!-- Botón Flotante con Ventana de Chat (Puro código) -->
+<div id="whatsapp-chat" class="fixed bottom-6 left-6 z-50">
+  
+  <!-- Ventana de Chat (inicialmente oculta) -->
+  <div id="chat-window" class="hidden mb-4 w-72 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+    <!-- Encabezado Verde -->
+    <div class="bg-[#25D366] p-4 text-white flex justify-between items-center">
+      <span class="font-bold flex items-center gap-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 2.17.68 4.19 1.85 5.85L2 22l4.43-1.15A9.95 9.95 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+        WhatsApp
+      </span>
+      <button onclick="document.getElementById('chat-window').classList.add('hidden')" class="hover:opacity-80">✕</button>
     </div>
-    <!-- Cuerpo del chat -->
-    <div class="p-4">
-      <div class="bg-gray-100 p-3 rounded-lg text-sm text-gray-700">
+    
+    <!-- Mensaje -->
+    <div class="p-4 bg-gray-50">
+      <div class="bg-white p-3 rounded-lg shadow-sm text-sm text-gray-700 border border-gray-100">
         Hola 👋<br>¿Cómo podemos ayudarte?
       </div>
     </div>
-    <!-- Botón abrir chat -->
+    
+    <!-- Botón de Acción -->
     <div class="p-4">
       <a href="https://wa.me/573021011261?text=Hola,%20deseo%20más%20información." 
-         target="_blank" class="block w-full bg-green-500 text-white text-center py-2 rounded-lg font-bold">
+         target="_blank" 
+         class="block w-full bg-[#25D366] text-white text-center py-2.5 rounded-lg font-bold hover:bg-[#20bd5a] transition-colors">
          Abrir chat
       </a>
     </div>
   </div>
-  <!-- Burbuja flotante -->
-  <button onclick="toggleChat()" class="bg-green-500 p-4 rounded-full shadow-lg text-white">
-    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 2.17.68 4.19 1.85 5.85L2 22l4.43-1.15A9.95 9.95 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+
+  <!-- Botón de apertura (El icono de WhatsApp) -->
+  <button onclick="document.getElementById('chat-window').classList.toggle('hidden')" 
+          class="bg-[#25D366] p-4 rounded-full shadow-lg hover:scale-105 transition-transform">
+    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 2.17.68 4.19 1.85 5.85L2 22l4.43-1.15A9.95 9.95 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
   </button>
 </div>
