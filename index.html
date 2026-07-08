@@ -709,17 +709,14 @@
     
     <p>© 2026 Psicóloga Aura Herrera. Todos los derechos reservados. Medellín, Colombia.</p>
 </footer>
-<!-- Botón Flotante con Ventana de Chat (Puro código) -->
-<div id="whatsapp-chat" class="fixed bottom-6 left-6 z-50">
+<!-- Botón Flotante con Ventana de Chat (Posición: Derecha inferior) -->
+<div id="whatsapp-chat" class="fixed bottom-6 right-6 z-50">
   
   <!-- Ventana de Chat (inicialmente oculta) -->
   <div id="chat-window" class="hidden mb-4 w-72 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
-    <!-- Encabezado Verde -->
+    <!-- Encabezado -->
     <div class="bg-[#25D366] p-4 text-white flex justify-between items-center">
-      <span class="font-bold flex items-center gap-2">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 2.17.68 4.19 1.85 5.85L2 22l4.43-1.15A9.95 9.95 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
-        WhatsApp
-      </span>
+      <span class="font-bold">WhatsApp</span>
       <button onclick="document.getElementById('chat-window').classList.add('hidden')" class="hover:opacity-80">✕</button>
     </div>
     
@@ -740,9 +737,11 @@
     </div>
   </div>
 
-  <!-- Botón de apertura (El icono de WhatsApp) -->
+  <!-- Botón de apertura (Icono oficial) -->
   <button onclick="document.getElementById('chat-window').classList.toggle('hidden')" 
-          class="bg-[#25D366] p-4 rounded-full shadow-lg hover:scale-105 transition-transform">
-    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 2.17.68 4.19 1.85 5.85L2 22l4.43-1.15A9.95 9.95 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+          class="bg-[#25D366] p-3 rounded-full shadow-lg hover:scale-105 transition-transform flex items-center justify-center">
+    <svg class="w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-1.016-.274-.149-.473-.224-.673.149-.199.374-.776.967-.951 1.154-.174.149-.349.149-.648 0-.297-.149-1.247-.465-2.38-1.474-.881-.782-1.474-1.748-1.649-2.12-.174-.374-.019-.58.163-.767.174-.174.374-.448.548-.673.199-.224.274-.374.424-.623.149-.224.074-.448-.025-.623s-.673-1.623-.923-2.221c-.249-.573-.523-.498-.723-.523s-.424-.025-.648-.025c-.224 0-.573.074-.873.424-.324.349-1.247 1.222-1.247 2.993 0 1.772 1.347 3.493 1.522 3.742.174.249 2.421 3.943 5.867 5.514 3.447 1.571 3.447 1.047 4.071 1.047.623 0 2.03-.847 2.329-1.649.297-.803.297-1.474.224-1.649-.074-.149-.274-.249-.573-.399zM12 2C6.48 2 2 6.48 2 12c0 2.17.68 4.19 1.85 5.85L2 22l4.43-1.15A9.95 9.95 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.727 14.498c-.281.716-1.558 1.328-2.138 1.411-.324.047-.648.094-1.921-.403-1.637-.624-2.73-1.464-3.791-2.915-1.077-1.474-2.115-3.323-2.253-5.268-.139-1.944.403-2.943 1.156-3.727.288-.303 1.066-.677 1.637-.677.163 0 .326.009.474.026.314.037.495.127.632.448.274.629.835 2.054.912 2.221.079.163.149.349.074.573-.074.224-.149.349-.324.523-.174.174-.324.324-.498.548-.174.224-.224.424-.074.698.149.274 1.222 2.029 1.748 2.502.523.473 1.872 1.474 2.146 1.649.274.174.523.149.773-.074.249-.224.847-.973 1.072-1.322.224-.349.448-.297.773-.174.324.124 2.054.973 2.403 1.148.349.174.573.274.648.424.074.149.074.803-.207 1.519z"/>
+    </svg>
   </button>
 </div>
